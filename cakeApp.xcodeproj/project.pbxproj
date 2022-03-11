@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B40F48CA27DBF8DB00AAD37D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40F48C927DBF8DB00AAD37D /* Login.storyboard */; };
 		B40F48CC27DBFFCE00AAD37D /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40F48CB27DBFFCE00AAD37D /* SignUp.storyboard */; };
+		B40F48CF27DC062E00AAD37D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F48CE27DC062E00AAD37D /* LoginViewController.swift */; };
+		B40F48D127DC080100AAD37D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F48D027DC080100AAD37D /* SignUpViewController.swift */; };
 		B423819827DBF4DD00E66E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423819727DBF4DD00E66E0F /* AppDelegate.swift */; };
 		B423819A27DBF4DD00E66E0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423819927DBF4DD00E66E0F /* SceneDelegate.swift */; };
 		B423819C27DBF4DD00E66E0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423819B27DBF4DD00E66E0F /* ViewController.swift */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		B40F48C927DBF8DB00AAD37D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B40F48CB27DBFFCE00AAD37D /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		B40F48CE27DC062E00AAD37D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B40F48D027DC080100AAD37D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B423819427DBF4DD00E66E0F /* cakeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cakeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B423819727DBF4DD00E66E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B423819927DBF4DD00E66E0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B40F48CD27DC061F00AAD37D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B40F48CE27DC062E00AAD37D /* LoginViewController.swift */,
+				B40F48D027DC080100AAD37D /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		B423818B27DBF4DD00E66E0F = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +118,7 @@
 		B423819627DBF4DD00E66E0F /* cakeApp */ = {
 			isa = PBXGroup;
 			children = (
+				B40F48CD27DC061F00AAD37D /* Controller */,
 				B423819727DBF4DD00E66E0F /* AppDelegate.swift */,
 				B423819927DBF4DD00E66E0F /* SceneDelegate.swift */,
 				B423819B27DBF4DD00E66E0F /* ViewController.swift */,
@@ -269,9 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B40F48D127DC080100AAD37D /* SignUpViewController.swift in Sources */,
 				B423819C27DBF4DD00E66E0F /* ViewController.swift in Sources */,
 				B42381A227DBF4DD00E66E0F /* cakeApp.xcdatamodeld in Sources */,
 				B423819827DBF4DD00E66E0F /* AppDelegate.swift in Sources */,
+				B40F48CF27DC062E00AAD37D /* LoginViewController.swift in Sources */,
 				B423819A27DBF4DD00E66E0F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
