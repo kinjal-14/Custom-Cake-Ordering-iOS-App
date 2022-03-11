@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func accountButtonClicked(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToLogin", sender: self)
+    }
+    
 }
 

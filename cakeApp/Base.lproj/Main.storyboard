@@ -8,6 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--LoginVC-->
+        <scene sceneID="lZN-2v-oS6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="LoginVC" id="741-8y-ncV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yUg-k8-ySp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLX-qJ-u5N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622" y="-60"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -58,6 +68,9 @@
                                     </preferredSymbolConfiguration>
                                     <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="accountButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xy5-XY-Tl9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCE-Ch-Pza">
                                 <rect key="frame" x="29" y="416" width="174" height="64"/>
@@ -109,6 +122,9 @@
                             <constraint firstItem="gKy-7W-juo" firstAttribute="top" secondItem="2GK-rW-v9Z" secondAttribute="top" id="hKD-ZM-9Ob"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="741-8y-ncV" kind="show" identifier="goToLogin" id="a6Q-N2-RXt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
