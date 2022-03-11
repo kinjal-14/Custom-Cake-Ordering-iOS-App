@@ -15,4 +15,11 @@ class SignUpViewController: UIViewController {
     }
     
 
+    @IBAction func signUpButtonClicked(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "goToHome", sender: self)
+
+    }
+    
+    
 }

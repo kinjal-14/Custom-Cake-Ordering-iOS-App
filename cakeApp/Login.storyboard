@@ -80,6 +80,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kzE-9U-dhT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ja9-D6-HNw">
                                 <rect key="frame" x="45" y="474" width="325" height="44"/>
@@ -132,12 +135,23 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="dGL-lP-8fj" kind="show" identifier="goToSignUp" id="c5b-Da-tkO"/>
+                        <segue destination="dGL-lP-8fj" kind="showDetail" identifier="goToSignUp" id="c5b-Da-tkO"/>
+                        <segue destination="emV-sE-6Fr" kind="showDetail" identifier="goToHome" id="INy-3z-4VQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="84"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="vtJ-l6-1ba">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MainVC" id="emV-sE-6Fr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lsq-Ye-xPP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rg-zO-AXw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="-25"/>
         </scene>
     </scenes>
     <resources>

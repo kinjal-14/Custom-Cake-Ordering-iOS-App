@@ -22,5 +22,12 @@ class LoginViewController: UIViewController {
         
     }
     
+    @IBAction func loginButtonClicked(_ sender: Any) {
+   
+        self.performSegue(withIdentifier: "goToHome", sender: self)
+        
+    }
+    
+    
 
 }
