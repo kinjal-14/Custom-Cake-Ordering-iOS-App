@@ -135,8 +135,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="dGL-lP-8fj" kind="showDetail" identifier="goToSignUp" id="c5b-Da-tkO"/>
-                        <segue destination="emV-sE-6Fr" kind="showDetail" identifier="goToHome" id="INy-3z-4VQ"/>
+                        <outlet property="emailText" destination="ShL-hf-DcH" id="Ktt-n9-cuD"/>
+                        <outlet property="passwordText" destination="RBz-uD-SFM" id="cP3-6Z-nQo"/>
+                        <segue destination="dGL-lP-8fj" kind="presentation" identifier="goToSignUp" modalPresentationStyle="fullScreen" id="c5b-Da-tkO"/>
+                        <segue destination="emV-sE-6Fr" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="INy-3z-4VQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -163,8 +163,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="Bc6-8c-H5B" kind="showDetail" identifier="goToLogin" id="PIo-Lf-JZ8"/>
-                        <segue destination="axb-Ue-aYa" kind="showDetail" identifier="goToHome" id="XM2-ey-9Tk"/>
+                        <outlet property="AlreadyloginButtonClicked" destination="NZk-mq-dB9" id="cgx-d5-1ZV"/>
+                        <outlet property="emailText" destination="HuW-Ni-rhs" id="qAZ-bA-T9j"/>
+                        <outlet property="fullnameText" destination="0T6-95-hlm" id="eBj-TS-eii"/>
+                        <outlet property="mobileText" destination="UZx-Cb-LMZ" id="A2X-ts-kM2"/>
+                        <outlet property="passwordText" destination="ZgB-eg-1X5" id="GgR-RW-yI1"/>
+                        <outlet property="signUpButton" destination="UcI-dx-xb2" id="IDM-KF-99m"/>
+                        <outlet property="signUpButtonClicked" destination="UcI-dx-xb2" id="6Ez-xe-yrg"/>
+                        <segue destination="Bc6-8c-H5B" kind="presentation" identifier="goToLogin" modalPresentationStyle="fullScreen" id="PIo-Lf-JZ8"/>
+                        <segue destination="axb-Ue-aYa" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="XM2-ey-9Tk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

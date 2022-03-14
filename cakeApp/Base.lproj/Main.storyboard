@@ -123,7 +123,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="741-8y-ncV" kind="showDetail" identifier="goToLogin" id="a6Q-N2-RXt"/>
+                        <segue destination="741-8y-ncV" kind="presentation" identifier="goToLogin" modalPresentationStyle="fullScreen" id="a6Q-N2-RXt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
