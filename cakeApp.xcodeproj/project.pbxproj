@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		640F15FF13706571CA8197F5 /* Pods_cakeApp_cakeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A954AB55B43D97056AF10905 /* Pods_cakeApp_cakeAppUITests.framework */; };
-		B40F48CA27DBF8DB00AAD37D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40F48C927DBF8DB00AAD37D /* Login.storyboard */; };
-		B40F48CC27DBFFCE00AAD37D /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40F48CB27DBFFCE00AAD37D /* SignUp.storyboard */; };
-		B40F48CF27DC062E00AAD37D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F48CE27DC062E00AAD37D /* LoginViewController.swift */; };
-		B40F48D127DC080100AAD37D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F48D027DC080100AAD37D /* SignUpViewController.swift */; };
+		B41B161E27E139E200C66760 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B41B161D27E139E200C66760 /* GoogleService-Info.plist */; };
 		B423819827DBF4DD00E66E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423819727DBF4DD00E66E0F /* AppDelegate.swift */; };
 		B423819A27DBF4DD00E66E0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423819927DBF4DD00E66E0F /* SceneDelegate.swift */; };
 		B423819C27DBF4DD00E66E0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423819B27DBF4DD00E66E0F /* ViewController.swift */; };
@@ -22,8 +19,6 @@
 		B42381B227DBF4DD00E66E0F /* cakeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42381B127DBF4DD00E66E0F /* cakeAppTests.swift */; };
 		B42381BC27DBF4DD00E66E0F /* cakeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42381BB27DBF4DD00E66E0F /* cakeAppUITests.swift */; };
 		B42381BE27DBF4DD00E66E0F /* cakeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42381BD27DBF4DD00E66E0F /* cakeAppUITestsLaunchTests.swift */; };
-		B47B3FB727DFE77F0013D584 /* CustomizeCake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47B3FB627DFE77F0013D584 /* CustomizeCake.storyboard */; };
-		B4C72F3827DFD4F1008E7463 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C72F3727DFD4F1008E7463 /* Utilities.swift */; };
 		CEA0969BF2D6402B7B283FA7 /* Pods_cakeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47100787E8B6BC50CEA7F9FB /* Pods_cakeAppTests.framework */; };
 		E842410DAAB92B90232F9A37 /* Pods_cakeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2405D42EFAAD84C8603D6 /* Pods_cakeApp.framework */; };
 /* End PBXBuildFile section */
@@ -54,10 +49,7 @@
 		76CB25CF2FBF083BF1736E72 /* Pods-cakeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cakeAppTests.release.xcconfig"; path = "Target Support Files/Pods-cakeAppTests/Pods-cakeAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		90A2405D42EFAAD84C8603D6 /* Pods_cakeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cakeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A954AB55B43D97056AF10905 /* Pods_cakeApp_cakeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cakeApp_cakeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B40F48C927DBF8DB00AAD37D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		B40F48CB27DBFFCE00AAD37D /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
-		B40F48CE27DC062E00AAD37D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B40F48D027DC080100AAD37D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B41B161D27E139E200C66760 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B423819427DBF4DD00E66E0F /* cakeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cakeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B423819727DBF4DD00E66E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B423819927DBF4DD00E66E0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,9 +64,6 @@
 		B42381B727DBF4DD00E66E0F /* cakeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cakeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42381BB27DBF4DD00E66E0F /* cakeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cakeAppUITests.swift; sourceTree = "<group>"; };
 		B42381BD27DBF4DD00E66E0F /* cakeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cakeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B442051227DFEEF2008BC801 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B47B3FB627DFE77F0013D584 /* CustomizeCake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomizeCake.storyboard; sourceTree = "<group>"; };
-		B4C72F3727DFD4F1008E7463 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		EAD17C1BBE8AF2C8AA558E56 /* Pods-cakeApp-cakeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cakeApp-cakeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-cakeApp-cakeAppUITests/Pods-cakeApp-cakeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,7 +105,6 @@
 				62E1419E2FE761A7CFA7C4A5 /* Pods-cakeAppTests.debug.xcconfig */,
 				76CB25CF2FBF083BF1736E72 /* Pods-cakeAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,16 +116,6 @@
 				47100787E8B6BC50CEA7F9FB /* Pods_cakeAppTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B40F48CD27DC061F00AAD37D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B40F48CE27DC062E00AAD37D /* LoginViewController.swift */,
-				B40F48D027DC080100AAD37D /* SignUpViewController.swift */,
-				B4C72F3727DFD4F1008E7463 /* Utilities.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		B423818B27DBF4DD00E66E0F = {
@@ -165,7 +143,6 @@
 		B423819627DBF4DD00E66E0F /* cakeApp */ = {
 			isa = PBXGroup;
 			children = (
-				B40F48CD27DC061F00AAD37D /* Controller */,
 				B423819727DBF4DD00E66E0F /* AppDelegate.swift */,
 				B423819927DBF4DD00E66E0F /* SceneDelegate.swift */,
 				B423819B27DBF4DD00E66E0F /* ViewController.swift */,
@@ -174,10 +151,7 @@
 				B42381A327DBF4DD00E66E0F /* Assets.xcassets */,
 				B42381A827DBF4DD00E66E0F /* Info.plist */,
 				B42381A027DBF4DD00E66E0F /* cakeApp.xcdatamodeld */,
-				B40F48C927DBF8DB00AAD37D /* Login.storyboard */,
-				B40F48CB27DBFFCE00AAD37D /* SignUp.storyboard */,
-				B442051227DFEEF2008BC801 /* GoogleService-Info.plist */,
-				B47B3FB627DFE77F0013D584 /* CustomizeCake.storyboard */,
+				B41B161D27E139E200C66760 /* GoogleService-Info.plist */,
 			);
 			path = cakeApp;
 			sourceTree = "<group>";
@@ -308,12 +282,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B47B3FB727DFE77F0013D584 /* CustomizeCake.storyboard in Resources */,
-				B40F48CA27DBF8DB00AAD37D /* Login.storyboard in Resources */,
 				B42381A727DBF4DD00E66E0F /* LaunchScreen.storyboard in Resources */,
 				B42381A427DBF4DD00E66E0F /* Assets.xcassets in Resources */,
 				B423819F27DBF4DD00E66E0F /* Main.storyboard in Resources */,
-				B40F48CC27DBFFCE00AAD37D /* SignUp.storyboard in Resources */,
+				B41B161E27E139E200C66760 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,12 +413,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B40F48D127DC080100AAD37D /* SignUpViewController.swift in Sources */,
 				B423819C27DBF4DD00E66E0F /* ViewController.swift in Sources */,
-				B4C72F3827DFD4F1008E7463 /* Utilities.swift in Sources */,
 				B42381A227DBF4DD00E66E0F /* cakeApp.xcdatamodeld in Sources */,
 				B423819827DBF4DD00E66E0F /* AppDelegate.swift in Sources */,
-				B40F48CF27DC062E00AAD37D /* LoginViewController.swift in Sources */,
 				B423819A27DBF4DD00E66E0F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

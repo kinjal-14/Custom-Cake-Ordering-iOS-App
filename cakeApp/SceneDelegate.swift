@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  cakeApp
-//
-//  Created by Mayur Khambhadiya on 2022-03-11.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
