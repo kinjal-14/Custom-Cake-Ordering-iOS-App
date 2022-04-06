@@ -46,6 +46,7 @@
 		B45A0F5A27FD2C90004EB0AD /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F5827FD2C90004EB0AD /* CartItemCell.swift */; };
 		B45A0F5B27FD2C90004EB0AD /* CartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F5927FD2C90004EB0AD /* CartItemCell.xib */; };
 		B45A0F5D27FD2D2C004EB0AD /* Shipping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F5C27FD2D2C004EB0AD /* Shipping.storyboard */; };
+		B45A0F5F27FD2DDF004EB0AD /* ShippingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F5E27FD2DDF004EB0AD /* ShippingViewController.swift */; };
 		CEA0969BF2D6402B7B283FA7 /* Pods_cakeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47100787E8B6BC50CEA7F9FB /* Pods_cakeAppTests.framework */; };
 		E842410DAAB92B90232F9A37 /* Pods_cakeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2405D42EFAAD84C8603D6 /* Pods_cakeApp.framework */; };
 /* End PBXBuildFile section */
@@ -118,6 +119,7 @@
 		B45A0F5827FD2C90004EB0AD /* CartItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCell.swift; sourceTree = "<group>"; };
 		B45A0F5927FD2C90004EB0AD /* CartItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartItemCell.xib; sourceTree = "<group>"; };
 		B45A0F5C27FD2D2C004EB0AD /* Shipping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shipping.storyboard; sourceTree = "<group>"; };
+		B45A0F5E27FD2DDF004EB0AD /* ShippingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingViewController.swift; sourceTree = "<group>"; };
 		EAD17C1BBE8AF2C8AA558E56 /* Pods-cakeApp-cakeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cakeApp-cakeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-cakeApp-cakeAppUITests/Pods-cakeApp-cakeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -252,6 +254,7 @@
 				B45A0F4327FD27E8004EB0AD /* PremadeViewController.swift */,
 				B45A0F4E27FD2A45004EB0AD /* CakeDetailsViewController.swift */,
 				B45A0F5427FD2B54004EB0AD /* CartViewController.swift */,
+				B45A0F5E27FD2DDF004EB0AD /* ShippingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				B423819A27DBF4DD00E66E0F /* SceneDelegate.swift in Sources */,
 				B45A0F4A27FD28B5004EB0AD /* ProductCell.swift in Sources */,
 				B45A0F2827FD2039004EB0AD /* ContactViewController.swift in Sources */,
+				B45A0F5F27FD2DDF004EB0AD /* ShippingViewController.swift in Sources */,
 				B45A0F3227FD249B004EB0AD /* CustomizeSizeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
