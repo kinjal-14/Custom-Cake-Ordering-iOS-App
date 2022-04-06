@@ -23,6 +23,7 @@
 		B45A0F2627FD1F71004EB0AD /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F2527FD1F71004EB0AD /* AccountViewController.swift */; };
 		B45A0F2827FD2039004EB0AD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F2727FD2039004EB0AD /* ContactViewController.swift */; };
 		B45A0F2A27FD2043004EB0AD /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F2927FD2043004EB0AD /* Contact.storyboard */; };
+		B45A0F2C27FD214D004EB0AD /* CustomizeCake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F2B27FD214D004EB0AD /* CustomizeCake.storyboard */; };
 		CEA0969BF2D6402B7B283FA7 /* Pods_cakeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47100787E8B6BC50CEA7F9FB /* Pods_cakeAppTests.framework */; };
 		E842410DAAB92B90232F9A37 /* Pods_cakeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2405D42EFAAD84C8603D6 /* Pods_cakeApp.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		B45A0F2527FD1F71004EB0AD /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		B45A0F2727FD2039004EB0AD /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		B45A0F2927FD2043004EB0AD /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		B45A0F2B27FD214D004EB0AD /* CustomizeCake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomizeCake.storyboard; sourceTree = "<group>"; };
 		EAD17C1BBE8AF2C8AA558E56 /* Pods-cakeApp-cakeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cakeApp-cakeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-cakeApp-cakeAppUITests/Pods-cakeApp-cakeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +165,7 @@
 				B42381A027DBF4DD00E66E0F /* cakeApp.xcdatamodeld */,
 				B41B161D27E139E200C66760 /* GoogleService-Info.plist */,
 				B45A0F2927FD2043004EB0AD /* Contact.storyboard */,
+				B45A0F2B27FD214D004EB0AD /* CustomizeCake.storyboard */,
 			);
 			path = cakeApp;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				B42381A727DBF4DD00E66E0F /* LaunchScreen.storyboard in Resources */,
 				B45A0F2A27FD2043004EB0AD /* Contact.storyboard in Resources */,
 				B42381A427DBF4DD00E66E0F /* Assets.xcassets in Resources */,
+				B45A0F2C27FD214D004EB0AD /* CustomizeCake.storyboard in Resources */,
 				B45A0F2127FD1DC5004EB0AD /* Account.storyboard in Resources */,
 				B423819F27DBF4DD00E66E0F /* Main.storyboard in Resources */,
 				B41B161E27E139E200C66760 /* GoogleService-Info.plist in Resources */,
