@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ContactViewController" customModule="cakeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8ZF-Go-u5v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home cake1" translatesAutoresizingMaskIntoConstraints="NO" id="aji-PU-xwv">
+                                <rect key="frame" x="0.0" y="0.0" width="612" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3G-Ta-S45">
+                                <rect key="frame" x="20" y="40" width="60" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="3VL-cb-gJh"/>
+                                    <constraint firstAttribute="height" constant="44" id="oK0-Lu-ziH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="" cornerStyle="medium">
+                                    <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="large" weight="bold">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    </preferredSymbolConfiguration>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="X2B-XQ-HrM"/>
+                                    <segue destination="kyf-BC-nPH" kind="presentation" identifier="goToAccount" modalPresentationStyle="fullScreen" id="Ef8-VD-oct"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cake Dreams" translatesAutoresizingMaskIntoConstraints="NO" id="RSe-bs-09R">
+                                <rect key="frame" x="206" y="174" width="200" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="YKZ-H3-8F7"/>
+                                    <constraint firstAttribute="width" constant="200" id="uc1-qw-4lN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD1-JC-ISN">
+                                <rect key="frame" x="30" y="344" width="552" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="341" id="1g9-qz-M7I"/>
+                                    <constraint firstAttribute="height" constant="300" id="R0Q-w6-6uR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0nh-cI-btz">
+                                <rect key="frame" x="176" y="399" width="300" height="195"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cake Dreams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nc5-ON-Bxm">
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="31"/>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1(438)987-6543" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUb-fh-tQk">
+                                        <rect key="frame" x="0.0" y="51" width="192" height="31"/>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5257 Queen Mary, Snowdon,              H3W1Y3" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3df-bW-i1s">
+                                        <rect key="frame" x="0.0" y="102" width="217.5" height="93"/>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="fUl-nm-MJv"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wx8-fo-00g">
+                                <rect key="frame" x="50" y="394" width="106" height="145"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS0-91-cKj">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="35"/>
+                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W6-ql-rnM">
+                                        <rect key="frame" x="0.0" y="55" width="103" height="35"/>
+                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSk-gi-ofv">
+                                        <rect key="frame" x="0.0" y="110" width="106" height="35"/>
+                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uYt-HN-zhi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aji-PU-xwv" firstAttribute="leading" secondItem="uYt-HN-zhi" secondAttribute="leading" id="1w1-9V-ff2"/>
+                            <constraint firstItem="RSe-bs-09R" firstAttribute="top" secondItem="uYt-HN-zhi" secondAttribute="top" constant="130" id="9Af-4U-wDX"/>
+                            <constraint firstAttribute="bottom" secondItem="aji-PU-xwv" secondAttribute="bottom" id="BgH-Cn-YFj"/>
+                            <constraint firstItem="d3G-Ta-S45" firstAttribute="top" secondItem="8ZF-Go-u5v" secondAttribute="top" constant="40" id="GqF-9M-CW2"/>
+                            <constraint firstItem="0nh-cI-btz" firstAttribute="leading" secondItem="wx8-fo-00g" secondAttribute="trailing" constant="20" id="IJm-FP-lqb"/>
+                            <constraint firstItem="d3G-Ta-S45" firstAttribute="leading" secondItem="uYt-HN-zhi" secondAttribute="leading" constant="20" id="Qma-PV-lOd"/>
+                            <constraint firstItem="wx8-fo-00g" firstAttribute="top" secondItem="uYt-HN-zhi" secondAttribute="top" constant="350" id="TeW-um-eyG"/>
+                            <constraint firstItem="XD1-JC-ISN" firstAttribute="leading" secondItem="uYt-HN-zhi" secondAttribute="leading" constant="30" id="VPY-9f-DxZ"/>
+                            <constraint firstItem="0nh-cI-btz" firstAttribute="top" secondItem="uYt-HN-zhi" secondAttribute="top" constant="355" id="XfT-ab-UwQ"/>
+                            <constraint firstItem="RSe-bs-09R" firstAttribute="centerX" secondItem="8ZF-Go-u5v" secondAttribute="centerX" id="bDW-Qk-c1P"/>
+                            <constraint firstItem="aji-PU-xwv" firstAttribute="top" secondItem="8ZF-Go-u5v" secondAttribute="top" id="cps-rb-UOd"/>
+                            <constraint firstItem="wx8-fo-00g" firstAttribute="leading" secondItem="uYt-HN-zhi" secondAttribute="leading" constant="50" id="d20-eE-TaY"/>
+                            <constraint firstItem="aji-PU-xwv" firstAttribute="trailing" secondItem="uYt-HN-zhi" secondAttribute="trailing" id="dEl-Wb-H6Q"/>
+                            <constraint firstItem="XD1-JC-ISN" firstAttribute="top" secondItem="RSe-bs-09R" secondAttribute="bottom" constant="30" id="oc8-go-Fxn"/>
+                            <constraint firstItem="uYt-HN-zhi" firstAttribute="trailing" secondItem="XD1-JC-ISN" secondAttribute="trailing" constant="30" id="rd0-YS-9cA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contactImage" destination="RSe-bs-09R" id="aD5-do-J5h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="2"/>
+        </scene>
+        <!--AccountVC-->
+        <scene sceneID="rFv-Fk-rFx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" referencedIdentifier="AccountVC" id="kyf-BC-nPH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIF-yo-Kgc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cake Dreams" width="500" height="500"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="home cake1" width="612" height="408"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
