@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0dy-Gr-IUY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ox7-5Q-Shn">
+                                <rect key="frame" x="20" y="44" width="58.5" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58.5" id="KWJ-AR-R8P"/>
+                                    <constraint firstAttribute="height" constant="44" id="QQ7-6r-eZs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="medium">
+                                    <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="large">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    </preferredSymbolConfiguration>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkG-1z-wA5">
+                                <rect key="frame" x="335.5" y="44" width="58.5" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58.5" id="cg4-5L-SUt"/>
+                                    <constraint firstAttribute="height" constant="44" id="i3B-RJ-LsJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="cart" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    </preferredSymbolConfiguration>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORe-fK-iZp">
+                                <rect key="frame" x="91" y="46" width="232" height="40"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pre-made Cakes">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="30" name="Cochin-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6lk-fh-Qtl">
+                                <rect key="frame" x="20" y="157" width="374" height="705"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="tV3-Vc-q0Q">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukV-wv-Lb2">
+                                <rect key="frame" x="20" y="98" width="193" height="51"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sort &amp; Filter">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="26" name="Cochin-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D7H-Ja-oeg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PkG-1z-wA5" firstAttribute="top" secondItem="D7H-Ja-oeg" secondAttribute="top" id="5OU-n3-WIP"/>
+                            <constraint firstItem="ORe-fK-iZp" firstAttribute="leading" secondItem="Ox7-5Q-Shn" secondAttribute="trailing" constant="12.5" id="6mU-T9-1Cc"/>
+                            <constraint firstItem="6lk-fh-Qtl" firstAttribute="leading" secondItem="D7H-Ja-oeg" secondAttribute="leading" constant="20" id="JjJ-A9-seg"/>
+                            <constraint firstItem="ORe-fK-iZp" firstAttribute="centerY" secondItem="PkG-1z-wA5" secondAttribute="centerY" id="Lhl-D1-cqa"/>
+                            <constraint firstItem="Ox7-5Q-Shn" firstAttribute="top" secondItem="D7H-Ja-oeg" secondAttribute="top" id="MlB-ou-yYW"/>
+                            <constraint firstItem="Ox7-5Q-Shn" firstAttribute="leading" secondItem="D7H-Ja-oeg" secondAttribute="leading" constant="20" id="WbU-Pg-QVZ"/>
+                            <constraint firstItem="6lk-fh-Qtl" firstAttribute="top" secondItem="Ox7-5Q-Shn" secondAttribute="bottom" constant="69" id="a3D-mT-Wz5"/>
+                            <constraint firstItem="ORe-fK-iZp" firstAttribute="centerX" secondItem="0dy-Gr-IUY" secondAttribute="centerX" id="baw-8d-vIY"/>
+                            <constraint firstItem="D7H-Ja-oeg" firstAttribute="trailing" secondItem="PkG-1z-wA5" secondAttribute="trailing" constant="20" id="eoV-Sh-jLe"/>
+                            <constraint firstItem="6lk-fh-Qtl" firstAttribute="bottom" secondItem="D7H-Ja-oeg" secondAttribute="bottom" id="rgn-Ll-SCu"/>
+                            <constraint firstItem="ORe-fK-iZp" firstAttribute="top" secondItem="D7H-Ja-oeg" secondAttribute="top" constant="2" id="riu-Sb-GDb"/>
+                            <constraint firstItem="ukV-wv-Lb2" firstAttribute="top" secondItem="Ox7-5Q-Shn" secondAttribute="bottom" constant="10" id="s6m-8i-fR4"/>
+                            <constraint firstItem="ukV-wv-Lb2" firstAttribute="leading" secondItem="D7H-Ja-oeg" secondAttribute="leading" constant="20" id="thN-qR-feS"/>
+                            <constraint firstItem="D7H-Ja-oeg" firstAttribute="trailing" secondItem="6lk-fh-Qtl" secondAttribute="trailing" constant="20" id="zXB-hY-PoZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16" y="68"/>
+        </scene>
+        <!--CartVC-->
+        <scene sceneID="u14-1q-dib">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Cart" referencedIdentifier="CartVC" id="WHq-FM-J21" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="au1-Ez-NXU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="211"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="kgL-l3-3py">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MainVC" id="LWY-G6-DHF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pbq-B3-JUn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VvD-ET-Q07" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="62"/>
+        </scene>
+        <!--CakeDetailsVC-->
+        <scene sceneID="udS-yz-4kd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CakeDetails" referencedIdentifier="CakeDetailsVC" id="Wks-zM-3Kc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mkz-Np-LPu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="-147"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
