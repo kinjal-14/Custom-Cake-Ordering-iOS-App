@@ -20,6 +20,7 @@
 		B42381BC27DBF4DD00E66E0F /* cakeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42381BB27DBF4DD00E66E0F /* cakeAppUITests.swift */; };
 		B42381BE27DBF4DD00E66E0F /* cakeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42381BD27DBF4DD00E66E0F /* cakeAppUITestsLaunchTests.swift */; };
 		B45A0F2127FD1DC5004EB0AD /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F2027FD1DC5004EB0AD /* Account.storyboard */; };
+		B45A0F2627FD1F71004EB0AD /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F2527FD1F71004EB0AD /* AccountViewController.swift */; };
 		CEA0969BF2D6402B7B283FA7 /* Pods_cakeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47100787E8B6BC50CEA7F9FB /* Pods_cakeAppTests.framework */; };
 		E842410DAAB92B90232F9A37 /* Pods_cakeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2405D42EFAAD84C8603D6 /* Pods_cakeApp.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		B42381BB27DBF4DD00E66E0F /* cakeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cakeAppUITests.swift; sourceTree = "<group>"; };
 		B42381BD27DBF4DD00E66E0F /* cakeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cakeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B45A0F2027FD1DC5004EB0AD /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		B45A0F2527FD1F71004EB0AD /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		EAD17C1BBE8AF2C8AA558E56 /* Pods-cakeApp-cakeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cakeApp-cakeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-cakeApp-cakeAppUITests/Pods-cakeApp-cakeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,16 +147,17 @@
 		B423819627DBF4DD00E66E0F /* cakeApp */ = {
 			isa = PBXGroup;
 			children = (
+				B45A0F2427FD1F5A004EB0AD /* Controller */,
 				B423819727DBF4DD00E66E0F /* AppDelegate.swift */,
 				B423819927DBF4DD00E66E0F /* SceneDelegate.swift */,
 				B423819B27DBF4DD00E66E0F /* ViewController.swift */,
 				B423819D27DBF4DD00E66E0F /* Main.storyboard */,
 				B42381A527DBF4DD00E66E0F /* LaunchScreen.storyboard */,
+				B45A0F2027FD1DC5004EB0AD /* Account.storyboard */,
 				B42381A327DBF4DD00E66E0F /* Assets.xcassets */,
 				B42381A827DBF4DD00E66E0F /* Info.plist */,
 				B42381A027DBF4DD00E66E0F /* cakeApp.xcdatamodeld */,
 				B41B161D27E139E200C66760 /* GoogleService-Info.plist */,
-				B45A0F2027FD1DC5004EB0AD /* Account.storyboard */,
 			);
 			path = cakeApp;
 			sourceTree = "<group>";
@@ -174,6 +177,14 @@
 				B42381BD27DBF4DD00E66E0F /* cakeAppUITestsLaunchTests.swift */,
 			);
 			path = cakeAppUITests;
+			sourceTree = "<group>";
+		};
+		B45A0F2427FD1F5A004EB0AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B45A0F2527FD1F71004EB0AD /* AccountViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B423819C27DBF4DD00E66E0F /* ViewController.swift in Sources */,
+				B45A0F2627FD1F71004EB0AD /* AccountViewController.swift in Sources */,
 				B42381A227DBF4DD00E66E0F /* cakeApp.xcdatamodeld in Sources */,
 				B423819827DBF4DD00E66E0F /* AppDelegate.swift in Sources */,
 				B423819A27DBF4DD00E66E0F /* SceneDelegate.swift in Sources */,
