@@ -24,6 +24,11 @@
 		B45A0F2827FD2039004EB0AD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F2727FD2039004EB0AD /* ContactViewController.swift */; };
 		B45A0F2A27FD2043004EB0AD /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F2927FD2043004EB0AD /* Contact.storyboard */; };
 		B45A0F2C27FD214D004EB0AD /* CustomizeCake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F2B27FD214D004EB0AD /* CustomizeCake.storyboard */; };
+		B45A0F2E27FD244D004EB0AD /* CustomizeCakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F2D27FD244D004EB0AD /* CustomizeCakeViewController.swift */; };
+		B45A0F3027FD2482004EB0AD /* CustomizeShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F2F27FD2482004EB0AD /* CustomizeShapeViewController.swift */; };
+		B45A0F3227FD249B004EB0AD /* CustomizeSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F3127FD249B004EB0AD /* CustomizeSizeViewController.swift */; };
+		B45A0F3627FD24D1004EB0AD /* CustomizeFlavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F3527FD24D1004EB0AD /* CustomizeFlavorViewController.swift */; };
+		B45A0F3827FD24E1004EB0AD /* CustomizeDesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F3727FD24E1004EB0AD /* CustomizeDesignViewController.swift */; };
 		CEA0969BF2D6402B7B283FA7 /* Pods_cakeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47100787E8B6BC50CEA7F9FB /* Pods_cakeAppTests.framework */; };
 		E842410DAAB92B90232F9A37 /* Pods_cakeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2405D42EFAAD84C8603D6 /* Pods_cakeApp.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +79,11 @@
 		B45A0F2727FD2039004EB0AD /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		B45A0F2927FD2043004EB0AD /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
 		B45A0F2B27FD214D004EB0AD /* CustomizeCake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomizeCake.storyboard; sourceTree = "<group>"; };
+		B45A0F2D27FD244D004EB0AD /* CustomizeCakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeCakeViewController.swift; sourceTree = "<group>"; };
+		B45A0F2F27FD2482004EB0AD /* CustomizeShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeShapeViewController.swift; sourceTree = "<group>"; };
+		B45A0F3127FD249B004EB0AD /* CustomizeSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeSizeViewController.swift; sourceTree = "<group>"; };
+		B45A0F3527FD24D1004EB0AD /* CustomizeFlavorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeFlavorViewController.swift; sourceTree = "<group>"; };
+		B45A0F3727FD24E1004EB0AD /* CustomizeDesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeDesignViewController.swift; sourceTree = "<group>"; };
 		EAD17C1BBE8AF2C8AA558E56 /* Pods-cakeApp-cakeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cakeApp-cakeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-cakeApp-cakeAppUITests/Pods-cakeApp-cakeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +202,11 @@
 			children = (
 				B45A0F2527FD1F71004EB0AD /* AccountViewController.swift */,
 				B45A0F2727FD2039004EB0AD /* ContactViewController.swift */,
+				B45A0F2D27FD244D004EB0AD /* CustomizeCakeViewController.swift */,
+				B45A0F2F27FD2482004EB0AD /* CustomizeShapeViewController.swift */,
+				B45A0F3127FD249B004EB0AD /* CustomizeSizeViewController.swift */,
+				B45A0F3527FD24D1004EB0AD /* CustomizeFlavorViewController.swift */,
+				B45A0F3727FD24E1004EB0AD /* CustomizeDesignViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -439,12 +454,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45A0F3827FD24E1004EB0AD /* CustomizeDesignViewController.swift in Sources */,
+				B45A0F3027FD2482004EB0AD /* CustomizeShapeViewController.swift in Sources */,
 				B423819C27DBF4DD00E66E0F /* ViewController.swift in Sources */,
 				B45A0F2627FD1F71004EB0AD /* AccountViewController.swift in Sources */,
 				B42381A227DBF4DD00E66E0F /* cakeApp.xcdatamodeld in Sources */,
+				B45A0F3627FD24D1004EB0AD /* CustomizeFlavorViewController.swift in Sources */,
+				B45A0F2E27FD244D004EB0AD /* CustomizeCakeViewController.swift in Sources */,
 				B423819827DBF4DD00E66E0F /* AppDelegate.swift in Sources */,
 				B423819A27DBF4DD00E66E0F /* SceneDelegate.swift in Sources */,
 				B45A0F2827FD2039004EB0AD /* ContactViewController.swift in Sources */,
+				B45A0F3227FD249B004EB0AD /* CustomizeSizeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
