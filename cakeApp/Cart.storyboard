@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cart View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CartViewController" customModule="cakeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U4S-9N-mPo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TiG-vD-LYY">
+                                <rect key="frame" x="20" y="111" width="356" height="521"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping Cart" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sam-du-KVx">
+                                <rect key="frame" x="91" y="38" width="275" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="p5c-ja-BdZ"/>
+                                    <constraint firstAttribute="height" constant="53" id="vME-I3-dX0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="8" height="20"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6x-kB-qaw">
+                                <rect key="frame" x="73" y="809" width="250" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="4hF-sR-zAi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Zdu-dR-0Zc"/>
+                                    <constraint firstAttribute="width" constant="250" id="wEM-U5-m6p"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="55" id="wMq-y8-NEn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="zMS-s7-5N1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Order" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="35"/>
+                                    <attributedString key="attributedSubtitle"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="NG9-av-dYx" kind="presentation" identifier="goToShipping" modalPresentationStyle="fullScreen" id="y2R-zQ-xMc"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" id="iSz-CD-lXz">
+                                <rect key="frame" x="10" y="652" width="394" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXP-EG-a6a">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uow-xV-Of4">
+                                                <rect key="frame" x="0.0" y="0.0" width="290" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="290" id="Kk0-dS-h7j"/>
+                                                    <constraint firstAttribute="height" constant="30" id="RaI-GA-f3Z"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="8" height="20"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sn5-uu-6Z2">
+                                                <rect key="frame" x="290" y="0.0" width="104" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="bb1-vn-VWa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="8" height="20"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="uow-xV-Of4" firstAttribute="leading" secondItem="MXP-EG-a6a" secondAttribute="leading" constant="20" id="UMa-lx-syw"/>
+                                            <constraint firstAttribute="height" constant="30" id="jaq-Tn-uDu"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKf-6t-jpi">
+                                        <rect key="frame" x="0.0" y="33" width="394" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auP-sC-n2c">
+                                                <rect key="frame" x="0.0" y="0.0" width="290" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="290" id="F8D-4u-K7L"/>
+                                                    <constraint firstAttribute="height" constant="30" id="Vay-KO-CmQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="8" height="20"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydt-6f-QYt">
+                                                <rect key="frame" x="290" y="0.0" width="104" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="6AP-5W-av3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="8" height="20"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="auP-sC-n2c" firstAttribute="leading" secondItem="NKf-6t-jpi" secondAttribute="leading" constant="20" id="CYw-U6-kJk"/>
+                                            <constraint firstAttribute="height" constant="30" id="Rcv-p3-Ae7"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oR8-To-vOG">
+                                        <rect key="frame" x="0.0" y="66" width="394" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5i-TF-1G5">
+                                                <rect key="frame" x="0.0" y="0.0" width="290" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="1Hf-A5-l0F"/>
+                                                    <constraint firstAttribute="width" constant="290" id="azk-SS-atq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="8" height="20"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$30" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaF-cu-ZAi">
+                                                <rect key="frame" x="290" y="0.0" width="104" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="glf-rm-Tla"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="8" height="20"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="R4J-9U-d8A"/>
+                                            <constraint firstItem="L5i-TF-1G5" firstAttribute="leading" secondItem="oR8-To-vOG" secondAttribute="leading" constant="20" id="UYz-N8-mko"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PR3-bV-nJy">
+                                        <rect key="frame" x="0.0" y="99" width="394" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C11-Zk-DiM">
+                                                <rect key="frame" x="0.0" y="0.0" width="290" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="RZY-Cq-d8w"/>
+                                                    <constraint firstAttribute="width" constant="290" id="bdK-Zg-aGz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="8" height="20"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$170" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yH-CC-qCS">
+                                                <rect key="frame" x="290" y="0.0" width="104" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="tUp-0g-uAb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="8" height="20"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="C11-Zk-DiM" firstAttribute="leading" secondItem="PR3-bV-nJy" secondAttribute="leading" constant="20" id="Cac-WU-Feu"/>
+                                            <constraint firstAttribute="height" constant="30" id="Zjt-qG-53i"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="oR8-To-vOG" firstAttribute="top" secondItem="NKf-6t-jpi" secondAttribute="bottom" constant="10" id="vpq-P3-HXu"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1f-du-a58">
+                                <rect key="frame" x="20" y="44" width="61.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="A39-xi-lM5"/>
+                                    <constraint firstAttribute="height" constant="40" id="MZN-MF-lmY"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="PaT-0H-ADf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="pH5-p9-XUx"/>
+                                    <constraint firstAttribute="width" constant="61.5" id="upt-NZ-9ee"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="wyu-dd-GSf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="chevron.backward" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="large" weight="bold"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="UgY-Qp-d9y" kind="presentation" identifier="goToPremade" modalPresentationStyle="fullScreen" id="DSa-N3-pT1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="z1f-Nc-FsK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iSz-CD-lXz" firstAttribute="top" secondItem="TiG-vD-LYY" secondAttribute="bottom" constant="20" id="2v6-p9-piO"/>
+                            <constraint firstAttribute="trailing" secondItem="TiG-vD-LYY" secondAttribute="trailing" constant="20" id="72R-TO-reD"/>
+                            <constraint firstItem="z1f-Nc-FsK" firstAttribute="trailing" secondItem="sam-du-KVx" secondAttribute="trailing" constant="30" id="C1o-6r-gBl"/>
+                            <constraint firstItem="d6x-kB-qaw" firstAttribute="top" secondItem="iSz-CD-lXz" secondAttribute="bottom" constant="10" id="G0s-ms-R7y"/>
+                            <constraint firstItem="TiG-vD-LYY" firstAttribute="leading" secondItem="U4S-9N-mPo" secondAttribute="leading" constant="20" id="HZn-gn-SqU"/>
+                            <constraint firstItem="d6x-kB-qaw" firstAttribute="centerX" secondItem="U4S-9N-mPo" secondAttribute="centerX" id="Sgt-9a-wFf"/>
+                            <constraint firstItem="sam-du-KVx" firstAttribute="top" secondItem="U4S-9N-mPo" secondAttribute="top" constant="38" id="YDb-FO-beB"/>
+                            <constraint firstItem="p1f-du-a58" firstAttribute="top" secondItem="z1f-Nc-FsK" secondAttribute="top" id="ahu-H7-9Id"/>
+                            <constraint firstItem="d6x-kB-qaw" firstAttribute="leading" secondItem="z1f-Nc-FsK" secondAttribute="leading" constant="73" id="e8l-CW-dqn"/>
+                            <constraint firstItem="z1f-Nc-FsK" firstAttribute="trailing" secondItem="d6x-kB-qaw" secondAttribute="trailing" constant="73" id="fjX-2H-I9w"/>
+                            <constraint firstItem="p1f-du-a58" firstAttribute="leading" secondItem="z1f-Nc-FsK" secondAttribute="leading" constant="20" id="hGg-Tb-mw4"/>
+                            <constraint firstItem="TiG-vD-LYY" firstAttribute="top" secondItem="sam-du-KVx" secondAttribute="bottom" constant="20" id="oq4-Ww-I0W"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="68"/>
+        </scene>
+        <!--ShippingVC-->
+        <scene sceneID="xpx-pk-FSm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Shipping" referencedIdentifier="ShippingVC" id="NG9-av-dYx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8vg-a2-QoK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="-86"/>
+        </scene>
+        <!--PremadeVC-->
+        <scene sceneID="nNz-IY-CIz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Pre-made" referencedIdentifier="PremadeVC" id="UgY-Qp-d9y" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hp3-M8-8Sj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="101"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
