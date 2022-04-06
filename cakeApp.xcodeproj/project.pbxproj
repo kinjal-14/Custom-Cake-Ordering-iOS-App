@@ -38,6 +38,8 @@
 		B45A0F4A27FD28B5004EB0AD /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F4827FD28B5004EB0AD /* ProductCell.swift */; };
 		B45A0F4B27FD28B5004EB0AD /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F4927FD28B5004EB0AD /* ProductCell.xib */; };
 		B45A0F4D27FD294B004EB0AD /* CakeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F4C27FD294A004EB0AD /* CakeDetails.storyboard */; };
+		B45A0F4F27FD2A45004EB0AD /* CakeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F4E27FD2A45004EB0AD /* CakeDetailsViewController.swift */; };
+		B45A0F5127FD2A78004EB0AD /* CustomizeCake.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F5027FD2A78004EB0AD /* CustomizeCake.swift */; };
 		CEA0969BF2D6402B7B283FA7 /* Pods_cakeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47100787E8B6BC50CEA7F9FB /* Pods_cakeAppTests.framework */; };
 		E842410DAAB92B90232F9A37 /* Pods_cakeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2405D42EFAAD84C8603D6 /* Pods_cakeApp.framework */; };
 /* End PBXBuildFile section */
@@ -102,6 +104,8 @@
 		B45A0F4827FD28B5004EB0AD /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		B45A0F4927FD28B5004EB0AD /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		B45A0F4C27FD294A004EB0AD /* CakeDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CakeDetails.storyboard; sourceTree = "<group>"; };
+		B45A0F4E27FD2A45004EB0AD /* CakeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailsViewController.swift; sourceTree = "<group>"; };
+		B45A0F5027FD2A78004EB0AD /* CustomizeCake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeCake.swift; sourceTree = "<group>"; };
 		EAD17C1BBE8AF2C8AA558E56 /* Pods-cakeApp-cakeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cakeApp-cakeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-cakeApp-cakeAppUITests/Pods-cakeApp-cakeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,6 +236,7 @@
 				B45A0F3527FD24D1004EB0AD /* CustomizeFlavorViewController.swift */,
 				B45A0F3727FD24E1004EB0AD /* CustomizeDesignViewController.swift */,
 				B45A0F4327FD27E8004EB0AD /* PremadeViewController.swift */,
+				B45A0F4E27FD2A45004EB0AD /* CakeDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				B45A0F4627FD2820004EB0AD /* Product.swift */,
+				B45A0F5027FD2A78004EB0AD /* CustomizeCake.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -512,6 +518,7 @@
 				B45A0F3827FD24E1004EB0AD /* CustomizeDesignViewController.swift in Sources */,
 				B45A0F3C27FD25B4004EB0AD /* CustomizeCakeCell.swift in Sources */,
 				B45A0F4727FD2820004EB0AD /* Product.swift in Sources */,
+				B45A0F4F27FD2A45004EB0AD /* CakeDetailsViewController.swift in Sources */,
 				B45A0F3027FD2482004EB0AD /* CustomizeShapeViewController.swift in Sources */,
 				B423819C27DBF4DD00E66E0F /* ViewController.swift in Sources */,
 				B45A0F2627FD1F71004EB0AD /* AccountViewController.swift in Sources */,
@@ -519,6 +526,7 @@
 				B45A0F3627FD24D1004EB0AD /* CustomizeFlavorViewController.swift in Sources */,
 				B45A0F2E27FD244D004EB0AD /* CustomizeCakeViewController.swift in Sources */,
 				B423819827DBF4DD00E66E0F /* AppDelegate.swift in Sources */,
+				B45A0F5127FD2A78004EB0AD /* CustomizeCake.swift in Sources */,
 				B45A0F4427FD27E8004EB0AD /* PremadeViewController.swift in Sources */,
 				B45A0F4027FD261D004EB0AD /* Constant.swift in Sources */,
 				B423819A27DBF4DD00E66E0F /* SceneDelegate.swift in Sources */,
