@@ -37,6 +37,7 @@
 		B45A0F4727FD2820004EB0AD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F4627FD2820004EB0AD /* Product.swift */; };
 		B45A0F4A27FD28B5004EB0AD /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F4827FD28B5004EB0AD /* ProductCell.swift */; };
 		B45A0F4B27FD28B5004EB0AD /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F4927FD28B5004EB0AD /* ProductCell.xib */; };
+		B45A0F4D27FD294B004EB0AD /* CakeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F4C27FD294A004EB0AD /* CakeDetails.storyboard */; };
 		CEA0969BF2D6402B7B283FA7 /* Pods_cakeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47100787E8B6BC50CEA7F9FB /* Pods_cakeAppTests.framework */; };
 		E842410DAAB92B90232F9A37 /* Pods_cakeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2405D42EFAAD84C8603D6 /* Pods_cakeApp.framework */; };
 /* End PBXBuildFile section */
@@ -100,6 +101,7 @@
 		B45A0F4627FD2820004EB0AD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		B45A0F4827FD28B5004EB0AD /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		B45A0F4927FD28B5004EB0AD /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		B45A0F4C27FD294A004EB0AD /* CakeDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CakeDetails.storyboard; sourceTree = "<group>"; };
 		EAD17C1BBE8AF2C8AA558E56 /* Pods-cakeApp-cakeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cakeApp-cakeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-cakeApp-cakeAppUITests/Pods-cakeApp-cakeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +199,7 @@
 				B45A0F2B27FD214D004EB0AD /* CustomizeCake.storyboard */,
 				B45A0F3F27FD261D004EB0AD /* Constant.swift */,
 				B45A0F4127FD27A7004EB0AD /* Pre-made.storyboard */,
+				B45A0F4C27FD294A004EB0AD /* CakeDetails.storyboard */,
 			);
 			path = cakeApp;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				B45A0F4B27FD28B5004EB0AD /* ProductCell.xib in Resources */,
 				B423819F27DBF4DD00E66E0F /* Main.storyboard in Resources */,
 				B41B161E27E139E200C66760 /* GoogleService-Info.plist in Resources */,
+				B45A0F4D27FD294B004EB0AD /* CakeDetails.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
