@@ -42,6 +42,10 @@
 		B45A0F5127FD2A78004EB0AD /* CustomizeCake.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F5027FD2A78004EB0AD /* CustomizeCake.swift */; };
 		B45A0F5327FD2B38004EB0AD /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F5227FD2B38004EB0AD /* Cart.storyboard */; };
 		B45A0F5527FD2B54004EB0AD /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F5427FD2B54004EB0AD /* CartViewController.swift */; };
+		B45A0F5727FD2C6B004EB0AD /* CartProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F5627FD2C6B004EB0AD /* CartProduct.swift */; };
+		B45A0F5A27FD2C90004EB0AD /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F5827FD2C90004EB0AD /* CartItemCell.swift */; };
+		B45A0F5B27FD2C90004EB0AD /* CartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F5927FD2C90004EB0AD /* CartItemCell.xib */; };
+		B45A0F5D27FD2D2C004EB0AD /* Shipping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F5C27FD2D2C004EB0AD /* Shipping.storyboard */; };
 		CEA0969BF2D6402B7B283FA7 /* Pods_cakeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47100787E8B6BC50CEA7F9FB /* Pods_cakeAppTests.framework */; };
 		E842410DAAB92B90232F9A37 /* Pods_cakeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2405D42EFAAD84C8603D6 /* Pods_cakeApp.framework */; };
 /* End PBXBuildFile section */
@@ -110,6 +114,10 @@
 		B45A0F5027FD2A78004EB0AD /* CustomizeCake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeCake.swift; sourceTree = "<group>"; };
 		B45A0F5227FD2B38004EB0AD /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
 		B45A0F5427FD2B54004EB0AD /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		B45A0F5627FD2C6B004EB0AD /* CartProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProduct.swift; sourceTree = "<group>"; };
+		B45A0F5827FD2C90004EB0AD /* CartItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCell.swift; sourceTree = "<group>"; };
+		B45A0F5927FD2C90004EB0AD /* CartItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartItemCell.xib; sourceTree = "<group>"; };
+		B45A0F5C27FD2D2C004EB0AD /* Shipping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shipping.storyboard; sourceTree = "<group>"; };
 		EAD17C1BBE8AF2C8AA558E56 /* Pods-cakeApp-cakeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cakeApp-cakeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-cakeApp-cakeAppUITests/Pods-cakeApp-cakeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +217,7 @@
 				B45A0F4127FD27A7004EB0AD /* Pre-made.storyboard */,
 				B45A0F4C27FD294A004EB0AD /* CakeDetails.storyboard */,
 				B45A0F5227FD2B38004EB0AD /* Cart.storyboard */,
+				B45A0F5C27FD2D2C004EB0AD /* Shipping.storyboard */,
 			);
 			path = cakeApp;
 			sourceTree = "<group>";
@@ -252,6 +261,7 @@
 			children = (
 				B45A0F3A27FD25B4004EB0AD /* CustomizeCakeCell.swift */,
 				B45A0F4827FD28B5004EB0AD /* ProductCell.swift */,
+				B45A0F5827FD2C90004EB0AD /* CartItemCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				B45A0F4927FD28B5004EB0AD /* ProductCell.xib */,
+				B45A0F5927FD2C90004EB0AD /* CartItemCell.xib */,
 				B45A0F3B27FD25B4004EB0AD /* CustomizeCakeCell.xib */,
 			);
 			path = Xibs;
@@ -270,6 +281,7 @@
 			children = (
 				B45A0F4627FD2820004EB0AD /* Product.swift */,
 				B45A0F5027FD2A78004EB0AD /* CustomizeCake.swift */,
+				B45A0F5627FD2C6B004EB0AD /* CartProduct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -389,7 +401,9 @@
 				B42381A427DBF4DD00E66E0F /* Assets.xcassets in Resources */,
 				B45A0F5327FD2B38004EB0AD /* Cart.storyboard in Resources */,
 				B45A0F2C27FD214D004EB0AD /* CustomizeCake.storyboard in Resources */,
+				B45A0F5B27FD2C90004EB0AD /* CartItemCell.xib in Resources */,
 				B45A0F2127FD1DC5004EB0AD /* Account.storyboard in Resources */,
+				B45A0F5D27FD2D2C004EB0AD /* Shipping.storyboard in Resources */,
 				B45A0F3D27FD25B4004EB0AD /* CustomizeCakeCell.xib in Resources */,
 				B45A0F4B27FD28B5004EB0AD /* ProductCell.xib in Resources */,
 				B423819F27DBF4DD00E66E0F /* Main.storyboard in Resources */,
@@ -533,10 +547,12 @@
 				B45A0F3627FD24D1004EB0AD /* CustomizeFlavorViewController.swift in Sources */,
 				B45A0F5527FD2B54004EB0AD /* CartViewController.swift in Sources */,
 				B45A0F2E27FD244D004EB0AD /* CustomizeCakeViewController.swift in Sources */,
+				B45A0F5A27FD2C90004EB0AD /* CartItemCell.swift in Sources */,
 				B423819827DBF4DD00E66E0F /* AppDelegate.swift in Sources */,
 				B45A0F5127FD2A78004EB0AD /* CustomizeCake.swift in Sources */,
 				B45A0F4427FD27E8004EB0AD /* PremadeViewController.swift in Sources */,
 				B45A0F4027FD261D004EB0AD /* Constant.swift in Sources */,
+				B45A0F5727FD2C6B004EB0AD /* CartProduct.swift in Sources */,
 				B423819A27DBF4DD00E66E0F /* SceneDelegate.swift in Sources */,
 				B45A0F4A27FD28B5004EB0AD /* ProductCell.swift in Sources */,
 				B45A0F2827FD2039004EB0AD /* ContactViewController.swift in Sources */,
