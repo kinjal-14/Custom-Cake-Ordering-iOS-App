@@ -51,6 +51,7 @@
 		B45A0F6327FD2EDC004EB0AD /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F6227FD2EDC004EB0AD /* PaymentViewController.swift */; };
 		B45A0F6527FDE933004EB0AD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F6427FDE933004EB0AD /* Login.storyboard */; };
 		B45A0F6727FDEA0B004EB0AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A0F6627FDEA0B004EB0AD /* LoginViewController.swift */; };
+		B45A0F6927FDEADA004EB0AD /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A0F6827FDEADA004EB0AD /* SignUp.storyboard */; };
 		CEA0969BF2D6402B7B283FA7 /* Pods_cakeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47100787E8B6BC50CEA7F9FB /* Pods_cakeAppTests.framework */; };
 		E842410DAAB92B90232F9A37 /* Pods_cakeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2405D42EFAAD84C8603D6 /* Pods_cakeApp.framework */; };
 /* End PBXBuildFile section */
@@ -128,6 +129,7 @@
 		B45A0F6227FD2EDC004EB0AD /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		B45A0F6427FDE933004EB0AD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B45A0F6627FDEA0B004EB0AD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B45A0F6827FDEADA004EB0AD /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		EAD17C1BBE8AF2C8AA558E56 /* Pods-cakeApp-cakeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cakeApp-cakeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-cakeApp-cakeAppUITests/Pods-cakeApp-cakeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,6 +232,7 @@
 				B45A0F5C27FD2D2C004EB0AD /* Shipping.storyboard */,
 				B45A0F6027FD2E79004EB0AD /* Payment.storyboard */,
 				B45A0F6427FDE933004EB0AD /* Login.storyboard */,
+				B45A0F6827FDEADA004EB0AD /* SignUp.storyboard */,
 			);
 			path = cakeApp;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				B45A0F5327FD2B38004EB0AD /* Cart.storyboard in Resources */,
 				B45A0F2C27FD214D004EB0AD /* CustomizeCake.storyboard in Resources */,
 				B45A0F6127FD2E79004EB0AD /* Payment.storyboard in Resources */,
+				B45A0F6927FDEADA004EB0AD /* SignUp.storyboard in Resources */,
 				B45A0F5B27FD2C90004EB0AD /* CartItemCell.xib in Resources */,
 				B45A0F2127FD1DC5004EB0AD /* Account.storyboard in Resources */,
 				B45A0F5D27FD2D2C004EB0AD /* Shipping.storyboard in Resources */,
