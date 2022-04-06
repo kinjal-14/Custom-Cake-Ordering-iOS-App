@@ -1,4 +1,7 @@
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseCore
 
 class LoginViewController: UIViewController {
 
@@ -34,7 +37,39 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonClicked(_ sender: Any) {
    
-    
+        // Validate the fields
+        let error = validateFields( )
+
+        if error != nil {
+
+            let msg = UIAlertController(title: "Error", message:error, preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .default, handler: {(action) -> Void in print("OK button tapped")})
+            msg.addAction(ok)
+            self.present(msg, animated: true, completion: nil)
+        }
+        else {
+
+            let email = emailText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let password = passwordText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+
+            Auth.auth().signIn(withEmail: email, password: password) { (result, err) in
+                if err != nil{
+                    // err?.localizedDescription
+                    let msg = UIAlertController(title: "Error", message: err?.localizedDescription, preferredStyle: .alert)
+                    let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+                        print("OK BUTTON TAPPED")
+                    })
+                    msg.addAction(ok)
+                        self.present(msg, animated: true, completion: nil)
+                }
+            
+                else{
+                                   
+                    self.performSegue(withIdentifier: "goToHome", sender: self)
+                                    
+                }
+            }
+        }
     
     }
 
