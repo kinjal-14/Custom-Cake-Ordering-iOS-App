@@ -482,12 +482,27 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (2.0.0)
+  - Stripe (22.1.0):
+    - Stripe/Stripe3DS2 (= 22.1.0)
+    - StripeApplePay (= 22.1.0)
+    - StripeCore (= 22.1.0)
+    - StripeUICore (= 22.1.0)
+  - Stripe/Stripe3DS2 (22.1.0):
+    - StripeApplePay (= 22.1.0)
+    - StripeCore (= 22.1.0)
+    - StripeUICore (= 22.1.0)
+  - StripeApplePay (22.1.0):
+    - StripeCore (= 22.1.0)
+  - StripeCore (22.1.0)
+  - StripeUICore (22.1.0):
+    - StripeCore (= 22.1.0)
 
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
+  - Stripe
 
 SPEC REPOS:
   trunk:
@@ -509,6 +524,10 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - Stripe
+    - StripeApplePay
+    - StripeCore
+    - StripeUICore
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -529,7 +548,11 @@ SPEC CHECKSUMS:
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  Stripe: 151086f5a0ad9cbc03190fdb2f9b92f0ec6df08b
+  StripeApplePay: 3840077c849a760c321734ef004eaa9062ff1b45
+  StripeCore: 1ece9b1aa1882380437a7a980ed1fa914b5b72f4
+  StripeUICore: 38cbdf5e4d8a279af2426e9a57b179294dca8a40
 
-PODFILE CHECKSUM: 484473ba8256a75f615cde8bd40b53bd22cd1fca
+PODFILE CHECKSUM: 90ddc9a67b599c81e6c5185ff204a69bae08d434
 
 COCOAPODS: 1.11.2
