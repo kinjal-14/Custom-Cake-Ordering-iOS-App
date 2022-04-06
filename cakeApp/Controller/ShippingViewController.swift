@@ -28,20 +28,12 @@ class ShippingViewController: UIViewController, STPAddCardViewControllerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        print("********************************************************")
-//        print(cartProducts)
-//        print(subtotal)
-//        print(total)
-//        print(cost)
-//        print(tax)
+            
         shippingImage.layer.cornerRadius = 125
-        
     }
     
     func validateFields( ) -> String? {
 
-        // Check that all fields are filled in
         if address1Field.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             address2Field.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             postalCodeField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
@@ -49,7 +41,6 @@ class ShippingViewController: UIViewController, STPAddCardViewControllerDelegate
             stateField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
 
             return "Please fill in all fields."
-
         }
         return nil
     }
@@ -60,6 +51,12 @@ class ShippingViewController: UIViewController, STPAddCardViewControllerDelegate
     }
     
     @IBAction func buyButtonClicked(_ sender: Any) {
+
+        let addCardViewController = STPAddCardViewController()
+        addCardViewController.delegate = self
+        
+        let navigationController = UINavigationController(rootViewController: addCardViewController)
+        present(navigationController, animated: true)
 
         let error = validateFields( )
 
@@ -139,6 +136,28 @@ class ShippingViewController: UIViewController, STPAddCardViewControllerDelegate
                 self.performSegue(withIdentifier: "goToPayment", sender: self)
             }
         }
+    }
+    
+    func addCardViewControllerDidCancel(_ addCardViewController: STPAddCardViewController) {
+    
+        dismiss(animated: true)
+    }
+    
+    func addCardViewController(_ addCardViewController: STPAddCardViewController, didCreateToken token: STPToken, completion: @escaping STPErrorBlock) {
+        
+        dismiss(animated: true)
+        
+        print("Printing Strip Token:\(token.tokenId)")
+        
+        showToast(controller: self, message: "Transaction Success: \n Here is the Token Id: \(token.tokenId)", seconds: 1)
+
+    }
+    
+    func addCardViewController(_ addCardViewController: STPAddCardViewController, didCreatePaymentMethod paymentMethod: STPPaymentMethod, completion: @escaping STPErrorBlock) {
+        
+        dismiss(animated: true)
+        showToast(controller: self, message: "Transaction Success", seconds: 1)
+        self.performSegue(withIdentifier: "goToHome", sender: self)
     }
     
     func showToast(controller: UIViewController, message: String, seconds: Double){
