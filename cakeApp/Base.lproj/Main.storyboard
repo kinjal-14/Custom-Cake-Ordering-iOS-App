@@ -3,6 +3,187 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Home View COntroller-->
+        <scene sceneID="PbP-93-v8v">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" title="Home View COntroller" id="k2z-fz-Wxp" customClass="ViewController" customModule="cakeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DCF-go-3IJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnN-87-YMF">
+                                <rect key="frame" x="20" y="504" width="243" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Available Now">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="24" name="Cochin-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home cake1" translatesAutoresizingMaskIntoConstraints="NO" id="GSV-T9-Zfz">
+                                <rect key="frame" x="-163" y="-180" width="782" height="744"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="19"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5e-xl-ge9">
+                                <rect key="frame" x="70" y="44" width="100" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HFe-ou-SsP"/>
+                                    <constraint firstAttribute="height" constant="45" id="Rp9-nc-cgQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="labelButtonClicked:" destination="k2z-fz-Wxp" eventType="touchUpInside" id="2iH-zX-xsZ"/>
+                                    <action selector="nameButtonClicked:" destination="k2z-fz-Wxp" eventType="touchUpInside" id="wfK-Md-UCw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cake" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ih9-of-jkO">
+                                <rect key="frame" x="82.5" y="52" width="53.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiD-st-1ls">
+                                <rect key="frame" x="20" y="244" width="365" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="9sp-Mq-DxI"/>
+                                    <constraint firstAttribute="width" constant="365" id="iOF-gw-HT2"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="How would you like to order?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.98766966540404044" green="0.98766966540404044" blue="0.98766966540404044" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="50" name="Cochin-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgA-60-c2K">
+                                <rect key="frame" x="20" y="44" width="60" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="person.fill" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    </preferredSymbolConfiguration>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="accountButtonClicked:" destination="k2z-fz-Wxp" eventType="touchUpInside" id="WY3-bw-bBh"/>
+                                    <segue destination="hnf-fZ-uH9" kind="presentation" identifier="goToAccount" modalPresentationStyle="fullScreen" id="wgh-Ri-uc0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMc-UE-4rQ">
+                                <rect key="frame" x="29" y="416" width="174" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Pre-made Cake" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="26"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="premadeButtonClicked:" destination="k2z-fz-Wxp" eventType="touchUpInside" id="unF-WP-LjM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ie-Dz-IY1">
+                                <rect key="frame" x="217" y="416" width="168" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Customize Cake" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="26"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="customizeCakeButtonClicked:" destination="k2z-fz-Wxp" eventType="touchUpInside" id="M47-5W-7G7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjo-AC-7cs">
+                                <rect key="frame" x="326.5" y="44" width="67.5" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="cart" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    </preferredSymbolConfiguration>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cartButtonclicked:" destination="k2z-fz-Wxp" eventType="touchUpInside" id="zNB-J9-WBh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vanilla Cake" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neI-fV-eaf">
+                                <rect key="frame" x="124" y="828" width="166.5" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cake16" translatesAutoresizingMaskIntoConstraints="NO" id="ZI4-im-fcD">
+                                <rect key="frame" x="82" y="560" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="f1z-0N-0Cq"/>
+                                    <constraint firstAttribute="height" constant="250" id="ruc-vz-VWm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NQ7-Co-Ed9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ih9-of-jkO" firstAttribute="leading" secondItem="MgA-60-c2K" secondAttribute="trailing" constant="4" id="0ms-OP-vF8"/>
+                            <constraint firstItem="ZI4-im-fcD" firstAttribute="centerX" secondItem="DCF-go-3IJ" secondAttribute="centerX" id="5Av-r3-onQ"/>
+                            <constraint firstItem="MgA-60-c2K" firstAttribute="leading" secondItem="NQ7-Co-Ed9" secondAttribute="leading" constant="20" id="Cr6-j9-A4g"/>
+                            <constraint firstItem="W5e-xl-ge9" firstAttribute="top" secondItem="NQ7-Co-Ed9" secondAttribute="top" id="VcI-OV-2qE"/>
+                            <constraint firstItem="W5e-xl-ge9" firstAttribute="leading" secondItem="NQ7-Co-Ed9" secondAttribute="leading" constant="70" id="Wb1-Dd-r5T"/>
+                            <constraint firstItem="WiD-st-1ls" firstAttribute="top" secondItem="NQ7-Co-Ed9" secondAttribute="top" constant="200" id="YDC-9H-Xhh"/>
+                            <constraint firstItem="MgA-60-c2K" firstAttribute="top" secondItem="NQ7-Co-Ed9" secondAttribute="top" id="cby-fK-hax"/>
+                            <constraint firstItem="WiD-st-1ls" firstAttribute="leading" secondItem="NQ7-Co-Ed9" secondAttribute="leading" constant="20" id="igN-T2-m2z"/>
+                            <constraint firstItem="NQ7-Co-Ed9" firstAttribute="trailing" secondItem="qjo-AC-7cs" secondAttribute="trailing" constant="20" id="k3a-na-sZg"/>
+                            <constraint firstItem="ih9-of-jkO" firstAttribute="top" secondItem="NQ7-Co-Ed9" secondAttribute="top" constant="8" id="lIh-Iv-TzD"/>
+                            <constraint firstItem="qjo-AC-7cs" firstAttribute="top" secondItem="NQ7-Co-Ed9" secondAttribute="top" id="mzb-il-bs2"/>
+                            <constraint firstItem="ZI4-im-fcD" firstAttribute="top" secondItem="WiD-st-1ls" secondAttribute="bottom" constant="152" id="z72-vC-DrP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fullnameField" destination="ih9-of-jkO" id="efE-aR-kEe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1eu-Zt-lCg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98.550724637681171" y="67.633928571428569"/>
+        </scene>
+        <!--AccountVC-->
+        <scene sceneID="TyK-39-bC8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" referencedIdentifier="AccountVC" id="hnf-fZ-uH9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="v2d-zI-kPt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvQ-or-jl6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792" y="-210"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cake16" width="236" height="353"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="home cake1" width="612" height="408"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
