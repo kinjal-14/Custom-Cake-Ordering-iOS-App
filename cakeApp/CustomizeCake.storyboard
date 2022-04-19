@@ -8,179 +8,164 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="s0d-6b-0kx">
+        <!--CartVC-->
+        <scene sceneID="wKV-Xi-JkA">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kO2-Sd-DFa">
+                <viewControllerPlaceholder storyboardName="Cart" referencedIdentifier="CartVC" id="zOt-AT-zc1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ggm-Zq-NRV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240" y="640"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="0z3-pO-lC3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MainVC" id="wCC-Mz-s65" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPl-Mr-f1V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="640"/>
+        </scene>
+        <!--Customize Cake View Controller-->
+        <scene sceneID="kfP-KO-q7M">
+            <objects>
+                <viewController storyboardIdentifier="CustomizeCakeVC" id="b4b-W6-cB6" customClass="CustomizeCakeViewController" customModule="cakeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xZe-pO-ct3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home cake1" translatesAutoresizingMaskIntoConstraints="NO" id="MRG-WC-EoH">
-                                <rect key="frame" x="-70" y="-55" width="582" height="344"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home cake1" translatesAutoresizingMaskIntoConstraints="NO" id="Ff5-Ca-DiG">
+                                <rect key="frame" x="-17" y="-51" width="448" height="390"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="582" id="3Ds-gi-9jW"/>
-                                    <constraint firstAttribute="height" constant="344" id="kMo-cf-nSV"/>
+                                    <constraint firstAttribute="height" constant="390" id="C67-BV-Zpf"/>
+                                    <constraint firstAttribute="width" constant="448" id="hY0-ZP-37B"/>
                                 </constraints>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="19"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpm-uF-Dbw">
-                                <rect key="frame" x="20" y="44" width="61.5" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50B-t8-7D5">
+                                <rect key="frame" x="20" y="44" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="htf-Tt-DfK"/>
+                                    <constraint firstAttribute="height" constant="35" id="yCv-wJ-Goc"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="house" catalog="system" title="" cornerStyle="medium">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="large" weight="bold"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="bold"/>
                                     <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="homeButtonClicked:" destination="b4b-W6-cB6" eventType="touchUpInside" id="dcB-nf-3FT"/>
+                                    <segue destination="wCC-Mz-s65" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="C2h-Gb-vur"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customize Cake" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngd-VE-feO">
-                                <rect key="frame" x="25" y="114" width="219" height="100.5"/>
-                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="43"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <size key="shadowOffset" width="8" height="20"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2A9-mH-YIm">
-                                <rect key="frame" x="1" y="254" width="78" height="75"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKs-ou-cNv">
+                                <rect key="frame" x="354" y="44" width="40" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="Efp-bx-Qbg"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Type" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
-                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4S-n6-Zfk">
-                                <rect key="frame" x="25" y="546" width="132.5" height="26"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Makeup Cake">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="22" name="Cochin-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eks-No-2TC">
-                                <rect key="frame" x="25" y="764" width="107.5" height="26"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Swan Cake">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="22" name="Cochin-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bC-hR-yAr">
-                                <rect key="frame" x="218" y="546" width="98" height="26"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Doll Cake">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="22" name="Cochin-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="design1" translatesAutoresizingMaskIntoConstraints="NO" id="9wk-31-ZbL">
-                                <rect key="frame" x="25" y="374" width="171" height="164"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="164" id="2N6-aq-aFn"/>
-                                    <constraint firstAttribute="width" constant="171" id="h4n-cV-a3i"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Design4" translatesAutoresizingMaskIntoConstraints="NO" id="esI-s0-xa2">
-                                <rect key="frame" x="25" y="592" width="171" height="164"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="171" id="7p4-bk-bxK"/>
-                                    <constraint firstAttribute="height" constant="164" id="qWf-Og-kui"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="design2" translatesAutoresizingMaskIntoConstraints="NO" id="T3u-ED-fHU">
-                                <rect key="frame" x="218" y="374" width="171" height="164"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="164" id="njM-Am-xqV"/>
-                                    <constraint firstAttribute="width" constant="171" id="pR5-B8-kFM"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPV-Hu-AjU">
-                                <rect key="frame" x="80" y="254" width="83" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="y4w-mu-Am3"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Shape" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4o-1Y-g4D">
-                                <rect key="frame" x="164" y="254" width="65" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="5ij-M1-Xyw"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Size" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
-                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEt-wh-ZQc">
-                                <rect key="frame" x="332.5" y="44" width="61.5" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="ZbG-II-XUN"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="j6y-aA-vy5"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="61.5" id="oRi-AY-uvl"/>
-                                    <constraint firstAttribute="width" constant="61.5" id="scf-Zj-hbh"/>
+                                    <constraint firstAttribute="width" constant="40" id="aSd-fa-aaH"/>
+                                    <constraint firstAttribute="height" constant="35" id="hey-sM-tVB"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="cart" catalog="system" title="" cornerStyle="medium">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                     </preferredSymbolConfiguration>
                                     <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="cartButtonClicked:" destination="b4b-W6-cB6" eventType="touchUpInside" id="BoW-Td-neV"/>
+                                    <segue destination="zOt-AT-zc1" kind="presentation" identifier="goToCart" modalPresentationStyle="fullScreen" id="EBa-P6-FxM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VES-NQ-N8U">
-                                <rect key="frame" x="230" y="254" width="94" height="75"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTf-UY-sGp">
+                                <rect key="frame" x="0.0" y="242" width="414" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kE5-A5-niP">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="kfO-q5-8aR"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Type" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="typeButtonClicked:" destination="b4b-W6-cB6" eventType="touchUpInside" id="uq9-Yg-oc3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lr-OD-jvM">
+                                        <rect key="frame" x="83" y="0.0" width="82.5" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="eac-nJ-USb"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Shape" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="21"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="shapeButtonClicked:" destination="b4b-W6-cB6" eventType="touchUpInside" id="F9w-TC-rMA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywX-8b-V6T">
+                                        <rect key="frame" x="165.5" y="0.0" width="72" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="DpS-ZK-3I0"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Size" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2l-hO-cLq">
+                                        <rect key="frame" x="237.5" y="0.0" width="94" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" id="C1V-vD-Jzw"/>
+                                            <constraint firstAttribute="height" constant="75" id="NJ1-Rd-Rng"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Flavor" cornerStyle="capsule" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGK-4i-2Ke">
+                                        <rect key="frame" x="331.5" y="0.0" width="82.5" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="MO6-3p-Fjg"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Design" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="19"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="XKC-5n-W1c"/>
-                                    <constraint firstAttribute="width" constant="94" id="rKG-Wh-qbA"/>
+                                    <constraint firstAttribute="width" constant="414" id="AZv-ov-J4f"/>
+                                    <constraint firstAttribute="height" constant="75" id="EbE-zP-bpl"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Flavor" cornerStyle="capsule" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weE-Ln-6JN">
-                                <rect key="frame" x="325" y="254" width="92" height="75"/>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xl6-FZ-V42">
+                                <rect key="frame" x="20" y="374" width="374" height="427"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ZU4-OM-t8p">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exq-Ds-D7I">
+                                <rect key="frame" x="82" y="811" width="250" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="e9C-cJ-2hk"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Design" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5p-9b-UKK">
-                                <rect key="frame" x="82" y="814" width="250" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="DKK-Au-h0y"/>
-                                    <constraint firstAttribute="height" constant="55" id="kAt-nJ-F9c"/>
+                                    <constraint firstAttribute="height" constant="55" id="pil-20-wbE"/>
+                                    <constraint firstAttribute="width" constant="250" id="qxr-du-qQG"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Continue" cornerStyle="capsule">
@@ -188,88 +173,801 @@
                                     <attributedString key="attributedSubtitle"/>
                                     <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="continueButtonClicked:" destination="b4b-W6-cB6" eventType="touchUpInside" id="4d7-2W-bDk"/>
+                                    <segue destination="N7r-fm-00E" kind="presentation" identifier="goToCustomizeShape" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="oUm-Yi-Fwc"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="design5" translatesAutoresizingMaskIntoConstraints="NO" id="HHu-eo-wXk">
-                                <rect key="frame" x="218" y="592" width="171" height="164"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="164" id="GfG-23-4m7"/>
-                                    <constraint firstAttribute="width" constant="171" id="fe0-1R-QHY"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlT-85-jT4">
-                                <rect key="frame" x="218" y="764" width="114" height="26"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Teddy Cake">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="22" name="Cochin-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="k0q-DY-iCY"/>
+                        <viewLayoutGuide key="safeArea" id="HW1-bu-A2i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eks-No-2TC" firstAttribute="top" secondItem="esI-s0-xa2" secondAttribute="bottom" constant="8" id="0AY-TK-V7h"/>
-                            <constraint firstItem="HHu-eo-wXk" firstAttribute="top" secondItem="6bC-hR-yAr" secondAttribute="bottom" constant="20" id="0Nc-Kh-b1y"/>
-                            <constraint firstItem="eks-No-2TC" firstAttribute="leading" secondItem="k0q-DY-iCY" secondAttribute="leading" constant="25" id="30C-9A-ZR3"/>
-                            <constraint firstItem="VES-NQ-N8U" firstAttribute="top" secondItem="k0q-DY-iCY" secondAttribute="top" constant="210" id="31Y-c0-W0w"/>
-                            <constraint firstItem="HHu-eo-wXk" firstAttribute="leading" secondItem="k0q-DY-iCY" secondAttribute="leading" constant="218" id="4Qg-OT-vva"/>
-                            <constraint firstItem="vlT-85-jT4" firstAttribute="leading" secondItem="k0q-DY-iCY" secondAttribute="leading" constant="218" id="4hb-iD-HrB"/>
-                            <constraint firstItem="hPV-Hu-AjU" firstAttribute="top" secondItem="k0q-DY-iCY" secondAttribute="top" constant="210" id="5mx-sg-wDO"/>
-                            <constraint firstItem="hEt-wh-ZQc" firstAttribute="top" secondItem="k0q-DY-iCY" secondAttribute="top" id="8b3-eU-sek"/>
-                            <constraint firstItem="ngd-VE-feO" firstAttribute="leading" secondItem="kO2-Sd-DFa" secondAttribute="leading" constant="25" id="9Ry-4N-kqw"/>
-                            <constraint firstAttribute="trailing" secondItem="hEt-wh-ZQc" secondAttribute="trailing" constant="20" id="Bm3-n8-Sqz"/>
-                            <constraint firstItem="A4o-1Y-g4D" firstAttribute="top" secondItem="k0q-DY-iCY" secondAttribute="top" constant="210" id="Bmi-AB-KOS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="weE-Ln-6JN" secondAttribute="trailing" constant="-23" id="Ccl-wX-n0J"/>
-                            <constraint firstItem="qpm-uF-Dbw" firstAttribute="top" secondItem="k0q-DY-iCY" secondAttribute="top" id="DBl-vM-tMY"/>
-                            <constraint firstItem="weE-Ln-6JN" firstAttribute="leading" secondItem="VES-NQ-N8U" secondAttribute="trailing" constant="1" id="ETa-WA-TvS"/>
-                            <constraint firstItem="weE-Ln-6JN" firstAttribute="top" secondItem="k0q-DY-iCY" secondAttribute="top" constant="210" id="F7J-bg-wRz"/>
-                            <constraint firstItem="T3u-ED-fHU" firstAttribute="top" secondItem="k0q-DY-iCY" secondAttribute="top" constant="330" id="JUh-Sr-T43"/>
-                            <constraint firstItem="k0q-DY-iCY" firstAttribute="trailing" secondItem="T3u-ED-fHU" secondAttribute="trailing" constant="25" id="KZj-lu-wam"/>
-                            <constraint firstItem="K4S-n6-Zfk" firstAttribute="top" secondItem="9wk-31-ZbL" secondAttribute="bottom" constant="8" id="LZL-sd-ZFO"/>
-                            <constraint firstItem="esI-s0-xa2" firstAttribute="leading" secondItem="k0q-DY-iCY" secondAttribute="leading" constant="25" id="MAe-hs-Fah"/>
-                            <constraint firstItem="A4o-1Y-g4D" firstAttribute="leading" secondItem="hPV-Hu-AjU" secondAttribute="trailing" constant="1" id="OTY-Hb-pr1"/>
-                            <constraint firstItem="9wk-31-ZbL" firstAttribute="top" secondItem="k0q-DY-iCY" secondAttribute="top" constant="330" id="R7c-nH-3vP"/>
-                            <constraint firstItem="VES-NQ-N8U" firstAttribute="leading" secondItem="A4o-1Y-g4D" secondAttribute="trailing" constant="1" id="YcV-5S-Dm4"/>
-                            <constraint firstItem="k0q-DY-iCY" firstAttribute="trailing" secondItem="ngd-VE-feO" secondAttribute="trailing" constant="170" id="ZFT-5m-Q5B"/>
-                            <constraint firstItem="hEt-wh-ZQc" firstAttribute="top" secondItem="k0q-DY-iCY" secondAttribute="top" id="cvr-Xv-4dp"/>
-                            <constraint firstItem="ngd-VE-feO" firstAttribute="top" secondItem="kO2-Sd-DFa" secondAttribute="topMargin" constant="70" id="d0j-J7-n5d"/>
-                            <constraint firstItem="ngd-VE-feO" firstAttribute="top" secondItem="qpm-uF-Dbw" secondAttribute="bottom" constant="30" id="eSk-6g-vQh"/>
-                            <constraint firstItem="MRG-WC-EoH" firstAttribute="leading" secondItem="kO2-Sd-DFa" secondAttribute="leading" constant="-70" id="eVS-Sj-hgy"/>
-                            <constraint firstItem="esI-s0-xa2" firstAttribute="top" secondItem="K4S-n6-Zfk" secondAttribute="bottom" constant="20" id="f7e-4D-kNX"/>
-                            <constraint firstItem="6bC-hR-yAr" firstAttribute="top" secondItem="T3u-ED-fHU" secondAttribute="bottom" constant="8" id="fkx-8c-5Ek"/>
-                            <constraint firstItem="2A9-mH-YIm" firstAttribute="top" secondItem="k0q-DY-iCY" secondAttribute="top" constant="210" id="fpE-AN-6SU"/>
-                            <constraint firstItem="K4S-n6-Zfk" firstAttribute="leading" secondItem="k0q-DY-iCY" secondAttribute="leading" constant="25" id="fvj-t0-bvz"/>
-                            <constraint firstItem="qpm-uF-Dbw" firstAttribute="leading" secondItem="k0q-DY-iCY" secondAttribute="leading" constant="20" id="gWI-UY-TG2"/>
-                            <constraint firstItem="hPV-Hu-AjU" firstAttribute="leading" secondItem="2A9-mH-YIm" secondAttribute="trailing" constant="1" id="hgz-vT-OxQ"/>
-                            <constraint firstItem="MRG-WC-EoH" firstAttribute="top" secondItem="kO2-Sd-DFa" secondAttribute="top" constant="-55" id="iqk-Mk-hTb"/>
-                            <constraint firstItem="2A9-mH-YIm" firstAttribute="leading" secondItem="k0q-DY-iCY" secondAttribute="leading" constant="1" id="jII-60-mNy"/>
-                            <constraint firstItem="k0q-DY-iCY" firstAttribute="trailing" secondItem="hEt-wh-ZQc" secondAttribute="trailing" constant="20" id="pDF-cb-6Ri"/>
-                            <constraint firstItem="k0q-DY-iCY" firstAttribute="trailing" secondItem="ngd-VE-feO" secondAttribute="trailing" constant="170" id="pRG-Sv-Ulf"/>
-                            <constraint firstItem="9wk-31-ZbL" firstAttribute="leading" secondItem="k0q-DY-iCY" secondAttribute="leading" constant="25" id="rZT-AS-9Yu"/>
-                            <constraint firstItem="6bC-hR-yAr" firstAttribute="leading" secondItem="k0q-DY-iCY" secondAttribute="leading" constant="218" id="rkX-IB-LOP"/>
-                            <constraint firstItem="b5p-9b-UKK" firstAttribute="top" secondItem="k0q-DY-iCY" secondAttribute="top" constant="770" id="sJu-nS-NeA"/>
-                            <constraint firstItem="vlT-85-jT4" firstAttribute="top" secondItem="HHu-eo-wXk" secondAttribute="bottom" constant="8" id="sSE-Ac-Xeg"/>
-                            <constraint firstItem="b5p-9b-UKK" firstAttribute="top" secondItem="k0q-DY-iCY" secondAttribute="top" constant="770" id="vou-h9-8xm"/>
-                            <constraint firstItem="b5p-9b-UKK" firstAttribute="centerX" secondItem="kO2-Sd-DFa" secondAttribute="centerX" id="wTt-ef-BUK"/>
+                            <constraint firstItem="Xl6-FZ-V42" firstAttribute="leading" secondItem="HW1-bu-A2i" secondAttribute="leading" constant="20" id="2sD-Xo-xtJ"/>
+                            <constraint firstItem="NTf-UY-sGp" firstAttribute="leading" secondItem="HW1-bu-A2i" secondAttribute="leading" id="5k6-4g-2vo"/>
+                            <constraint firstItem="NKs-ou-cNv" firstAttribute="top" secondItem="HW1-bu-A2i" secondAttribute="top" id="8GX-Oz-FQR"/>
+                            <constraint firstItem="Ff5-Ca-DiG" firstAttribute="leading" secondItem="xZe-pO-ct3" secondAttribute="leading" constant="-17" id="9Rr-yx-Oai"/>
+                            <constraint firstItem="Ff5-Ca-DiG" firstAttribute="top" secondItem="xZe-pO-ct3" secondAttribute="top" constant="-51" id="9Xc-9D-M2p"/>
+                            <constraint firstItem="Exq-Ds-D7I" firstAttribute="centerX" secondItem="xZe-pO-ct3" secondAttribute="centerX" id="A1Z-17-wRP"/>
+                            <constraint firstItem="HW1-bu-A2i" firstAttribute="trailing" secondItem="NKs-ou-cNv" secondAttribute="trailing" constant="20" id="LEV-MS-2Hu"/>
+                            <constraint firstAttribute="trailing" secondItem="Ff5-Ca-DiG" secondAttribute="trailing" constant="-17" id="PeJ-IN-0cA"/>
+                            <constraint firstItem="HW1-bu-A2i" firstAttribute="trailing" secondItem="NTf-UY-sGp" secondAttribute="trailing" id="ShI-zB-9YK"/>
+                            <constraint firstItem="50B-t8-7D5" firstAttribute="leading" secondItem="HW1-bu-A2i" secondAttribute="leading" constant="20" id="bgY-fW-pmE"/>
+                            <constraint firstItem="NTf-UY-sGp" firstAttribute="top" secondItem="HW1-bu-A2i" secondAttribute="top" constant="198" id="gUC-e5-0b8"/>
+                            <constraint firstItem="Xl6-FZ-V42" firstAttribute="top" secondItem="HW1-bu-A2i" secondAttribute="top" constant="330" id="iV6-Xp-zCn"/>
+                            <constraint firstItem="HW1-bu-A2i" firstAttribute="trailing" secondItem="Xl6-FZ-V42" secondAttribute="trailing" constant="20" id="idB-kr-FJJ"/>
+                            <constraint firstItem="50B-t8-7D5" firstAttribute="top" secondItem="HW1-bu-A2i" secondAttribute="top" id="tHa-fu-fP0"/>
+                            <constraint firstAttribute="bottom" secondItem="Exq-Ds-D7I" secondAttribute="bottom" constant="30" id="vlU-yK-C24"/>
+                            <constraint firstItem="Exq-Ds-D7I" firstAttribute="top" secondItem="Xl6-FZ-V42" secondAttribute="bottom" constant="10" id="zrw-yB-be7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Xl6-FZ-V42" id="k2O-xw-CiV"/>
+                        <segue destination="b1j-DG-Tbi" kind="presentation" identifier="goToLogin" modalPresentationStyle="fullScreen" id="vm1-eL-sZj"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MuT-II-4Ot" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="50"/>
+            <point key="canvasLocation" x="-1020.2898550724639" y="49.553571428571423"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="qwa-8G-NBo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="LoginVC" id="b1j-DG-Tbi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZe-Ji-ezW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-776" y="640"/>
+        </scene>
+        <!--Customize Shape View Controller-->
+        <scene sceneID="F8v-eh-CsJ">
+            <objects>
+                <viewController storyboardIdentifier="CustomizeShapeVC" id="N7r-fm-00E" customClass="CustomizeShapeViewController" customModule="cakeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AxQ-dy-7u7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home cake1" translatesAutoresizingMaskIntoConstraints="NO" id="8JH-d2-dvJ">
+                                <rect key="frame" x="-17" y="-51" width="448" height="390"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="448" id="7PR-tl-SYm"/>
+                                    <constraint firstAttribute="height" constant="390" id="toq-Ft-Smz"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="19"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4O2-Qb-6xv">
+                                <rect key="frame" x="20" y="44" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="30N-xH-24y"/>
+                                    <constraint firstAttribute="width" constant="40" id="h6h-Uq-1QL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="house" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="bold"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="homeButtonClicked:" destination="N7r-fm-00E" eventType="touchUpInside" id="CHb-th-ZtN"/>
+                                    <segue destination="wCC-Mz-s65" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="xkh-I3-VIE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kP8-wQ-03S">
+                                <rect key="frame" x="354" y="44" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="92T-cz-cD8"/>
+                                    <constraint firstAttribute="height" constant="35" id="iQM-lw-LpW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="cart" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    </preferredSymbolConfiguration>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cartButtonClicked:" destination="N7r-fm-00E" eventType="touchUpInside" id="vqp-Eq-9MB"/>
+                                    <segue destination="zOt-AT-zc1" kind="presentation" identifier="goToCart" modalPresentationStyle="fullScreen" id="GRc-0k-tP5"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oej-qX-kYc">
+                                <rect key="frame" x="0.0" y="242" width="414" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qe-FG-l7R">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="fVT-zL-Zu7"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Type" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="typeButtonClicked:" destination="N7r-fm-00E" eventType="touchUpInside" id="9Nd-1N-z4R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1r-3S-tKN">
+                                        <rect key="frame" x="83" y="0.0" width="82.5" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="AHr-oh-wGR"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Shape" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="21"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="shapeButtonClicked:" destination="N7r-fm-00E" eventType="touchUpInside" id="8Yo-pO-1rF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pk2-Q9-9Hm">
+                                        <rect key="frame" x="165.5" y="0.0" width="72" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="9GE-D7-upu"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Size" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27i-wl-lTg">
+                                        <rect key="frame" x="237.5" y="0.0" width="94" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="2jD-Yw-Zhe"/>
+                                            <constraint firstAttribute="width" constant="94" id="XSE-CZ-Kr5"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Flavor" cornerStyle="capsule" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e22-71-Jz5">
+                                        <rect key="frame" x="331.5" y="0.0" width="82.5" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="Aul-BL-Fwo"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Design" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="19"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Wcw-hb-1Hq"/>
+                                    <constraint firstAttribute="width" constant="414" id="gA7-DT-o2u"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LzQ-c4-ez9">
+                                <rect key="frame" x="20" y="374" width="374" height="427"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="B2l-s0-p2D">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qoz-PP-E2g">
+                                <rect key="frame" x="82" y="811" width="250" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="EYp-yt-s96"/>
+                                    <constraint firstAttribute="width" constant="250" id="oAo-50-9al"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="35"/>
+                                    <attributedString key="attributedSubtitle"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="continueButtonClicked:" destination="N7r-fm-00E" eventType="touchUpInside" id="K6f-md-dhV"/>
+                                    <segue destination="7UN-rc-PVl" kind="presentation" identifier="goToCustomizeSize" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Hp0-z5-sVZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xDG-mM-d6Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8JH-d2-dvJ" firstAttribute="top" secondItem="AxQ-dy-7u7" secondAttribute="top" constant="-51" id="4BE-cY-DGf"/>
+                            <constraint firstItem="4O2-Qb-6xv" firstAttribute="leading" secondItem="xDG-mM-d6Z" secondAttribute="leading" constant="20" id="A0p-rb-bJT"/>
+                            <constraint firstItem="xDG-mM-d6Z" firstAttribute="trailing" secondItem="LzQ-c4-ez9" secondAttribute="trailing" constant="20" id="CBz-0G-n5J"/>
+                            <constraint firstItem="Qoz-PP-E2g" firstAttribute="centerX" secondItem="AxQ-dy-7u7" secondAttribute="centerX" id="Cr7-bB-Slf"/>
+                            <constraint firstItem="Qoz-PP-E2g" firstAttribute="top" secondItem="LzQ-c4-ez9" secondAttribute="bottom" constant="10" id="IuF-4w-A7a"/>
+                            <constraint firstItem="LzQ-c4-ez9" firstAttribute="leading" secondItem="xDG-mM-d6Z" secondAttribute="leading" constant="20" id="VPu-cy-x83"/>
+                            <constraint firstItem="Oej-qX-kYc" firstAttribute="top" secondItem="xDG-mM-d6Z" secondAttribute="top" constant="198" id="W9s-3u-C9D"/>
+                            <constraint firstAttribute="bottom" secondItem="Qoz-PP-E2g" secondAttribute="bottom" constant="30" id="ZBE-cy-d0J"/>
+                            <constraint firstItem="4O2-Qb-6xv" firstAttribute="top" secondItem="xDG-mM-d6Z" secondAttribute="top" id="gcm-Rc-rmj"/>
+                            <constraint firstItem="xDG-mM-d6Z" firstAttribute="trailing" secondItem="kP8-wQ-03S" secondAttribute="trailing" constant="20" id="hCY-bg-PFt"/>
+                            <constraint firstAttribute="trailing" secondItem="8JH-d2-dvJ" secondAttribute="trailing" constant="-17" id="iKi-V7-Mib"/>
+                            <constraint firstItem="8JH-d2-dvJ" firstAttribute="leading" secondItem="AxQ-dy-7u7" secondAttribute="leading" constant="-17" id="kQg-O7-Yc4"/>
+                            <constraint firstItem="xDG-mM-d6Z" firstAttribute="trailing" secondItem="Oej-qX-kYc" secondAttribute="trailing" id="mJU-El-c2c"/>
+                            <constraint firstItem="kP8-wQ-03S" firstAttribute="top" secondItem="xDG-mM-d6Z" secondAttribute="top" id="mml-e5-s4z"/>
+                            <constraint firstItem="LzQ-c4-ez9" firstAttribute="top" secondItem="xDG-mM-d6Z" secondAttribute="top" constant="330" id="nW9-sT-VxV"/>
+                            <constraint firstItem="Oej-qX-kYc" firstAttribute="leading" secondItem="xDG-mM-d6Z" secondAttribute="leading" id="oG3-ib-oRC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="LzQ-c4-ez9" id="eD7-uE-bUE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H4i-Rw-D1v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-238" y="50"/>
+        </scene>
+        <!--Customize Size View Controller-->
+        <scene sceneID="S16-mg-7Cr">
+            <objects>
+                <viewController storyboardIdentifier="CustomizeSizeVC" id="7UN-rc-PVl" customClass="CustomizeSizeViewController" customModule="cakeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ol-ml-fGc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home cake1" translatesAutoresizingMaskIntoConstraints="NO" id="bs7-dq-Jpx">
+                                <rect key="frame" x="-17" y="-51" width="448" height="390"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="390" id="9TT-tK-ujZ"/>
+                                    <constraint firstAttribute="width" constant="448" id="nhR-8e-ptg"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="19"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAK-ca-dkI">
+                                <rect key="frame" x="20" y="44" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="8sd-8T-Ij1"/>
+                                    <constraint firstAttribute="width" constant="40" id="WHQ-zU-0f9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="house" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="bold"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="homeButtonClicked:" destination="7UN-rc-PVl" eventType="touchUpInside" id="dBN-J4-Sz0"/>
+                                    <segue destination="wCC-Mz-s65" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="c0D-2a-ckC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0d-0U-fJ2">
+                                <rect key="frame" x="354" y="44" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="KK5-tz-tqw"/>
+                                    <constraint firstAttribute="width" constant="40" id="fu1-ti-8ZB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="cart" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    </preferredSymbolConfiguration>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cartButtonClicked:" destination="7UN-rc-PVl" eventType="touchUpInside" id="Neb-vr-gtQ"/>
+                                    <segue destination="zOt-AT-zc1" kind="presentation" identifier="goToCart" modalPresentationStyle="fullScreen" id="09A-C8-ZSN"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yQ-PI-OHV">
+                                <rect key="frame" x="0.0" y="242" width="414" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6m-eU-rjc">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="bzi-8R-wMb"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Type" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="typeButtonClicked:" destination="7UN-rc-PVl" eventType="touchUpInside" id="gvv-yw-dVZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJ7-Gs-Ldc">
+                                        <rect key="frame" x="83" y="0.0" width="82.5" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="qAQ-70-jdd"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Shape" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="21"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="shapeButtonClicked:" destination="7UN-rc-PVl" eventType="touchUpInside" id="VR6-gf-Fak"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iu3-ch-1iN">
+                                        <rect key="frame" x="165.5" y="0.0" width="72" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="ef4-8o-11J"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Size" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8w-MX-emh">
+                                        <rect key="frame" x="237.5" y="0.0" width="94" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="cTS-FX-IwV"/>
+                                            <constraint firstAttribute="width" constant="94" id="jBn-jF-gvS"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Flavor" cornerStyle="capsule" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRv-AJ-0bN">
+                                        <rect key="frame" x="331.5" y="0.0" width="82.5" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="4dy-5Q-ghp"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Design" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="19"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="cO9-yr-GnZ"/>
+                                    <constraint firstAttribute="height" constant="75" id="uiC-jn-qAB"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SEa-Hh-y9l">
+                                <rect key="frame" x="20" y="374" width="374" height="427"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="e6v-cM-pk8">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgs-A3-PQm">
+                                <rect key="frame" x="82" y="811" width="250" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="1eo-u9-R5F"/>
+                                    <constraint firstAttribute="height" constant="55" id="cPG-UZ-Ygx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="35"/>
+                                    <attributedString key="attributedSubtitle"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="continueButtonClicked:" destination="7UN-rc-PVl" eventType="touchUpInside" id="Bmm-rY-EfQ"/>
+                                    <segue destination="K1w-FF-HFy" kind="presentation" identifier="goToCustomizeFlavor" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="HxJ-e5-R4O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LDL-ai-Z7I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LDL-ai-Z7I" firstAttribute="trailing" secondItem="SEa-Hh-y9l" secondAttribute="trailing" constant="20" id="2Wy-bX-tum"/>
+                            <constraint firstItem="n0d-0U-fJ2" firstAttribute="top" secondItem="LDL-ai-Z7I" secondAttribute="top" id="2km-uf-PIl"/>
+                            <constraint firstItem="6yQ-PI-OHV" firstAttribute="leading" secondItem="LDL-ai-Z7I" secondAttribute="leading" id="5Iv-rI-bny"/>
+                            <constraint firstItem="SAK-ca-dkI" firstAttribute="leading" secondItem="LDL-ai-Z7I" secondAttribute="leading" constant="20" id="9NK-YI-Rn3"/>
+                            <constraint firstItem="SEa-Hh-y9l" firstAttribute="top" secondItem="LDL-ai-Z7I" secondAttribute="top" constant="330" id="B9A-9U-JTX"/>
+                            <constraint firstItem="SAK-ca-dkI" firstAttribute="top" secondItem="LDL-ai-Z7I" secondAttribute="top" id="IUT-cG-Svi"/>
+                            <constraint firstItem="SEa-Hh-y9l" firstAttribute="leading" secondItem="LDL-ai-Z7I" secondAttribute="leading" constant="20" id="IcW-lx-RZm"/>
+                            <constraint firstItem="bs7-dq-Jpx" firstAttribute="leading" secondItem="4Ol-ml-fGc" secondAttribute="leading" constant="-17" id="Oe6-d4-13Z"/>
+                            <constraint firstItem="LDL-ai-Z7I" firstAttribute="trailing" secondItem="6yQ-PI-OHV" secondAttribute="trailing" id="Rkc-O7-ZRJ"/>
+                            <constraint firstItem="LDL-ai-Z7I" firstAttribute="trailing" secondItem="n0d-0U-fJ2" secondAttribute="trailing" constant="20" id="Z2g-IS-DzX"/>
+                            <constraint firstItem="tgs-A3-PQm" firstAttribute="centerX" secondItem="4Ol-ml-fGc" secondAttribute="centerX" id="i5p-6B-rB6"/>
+                            <constraint firstItem="tgs-A3-PQm" firstAttribute="top" secondItem="SEa-Hh-y9l" secondAttribute="bottom" constant="10" id="ktt-yf-8aj"/>
+                            <constraint firstAttribute="trailing" secondItem="bs7-dq-Jpx" secondAttribute="trailing" constant="-17" id="om7-GF-vhr"/>
+                            <constraint firstItem="6yQ-PI-OHV" firstAttribute="top" secondItem="LDL-ai-Z7I" secondAttribute="top" constant="198" id="pbT-1A-fl8"/>
+                            <constraint firstAttribute="bottom" secondItem="tgs-A3-PQm" secondAttribute="bottom" constant="30" id="swK-9Y-wgo"/>
+                            <constraint firstItem="bs7-dq-Jpx" firstAttribute="top" secondItem="4Ol-ml-fGc" secondAttribute="top" constant="-51" id="vQC-Ai-ZBR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="SEa-Hh-y9l" id="eGo-d7-LqD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YLx-gp-rWN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="50"/>
+        </scene>
+        <!--Customize Flavor View Controller-->
+        <scene sceneID="mcE-3a-Hnc">
+            <objects>
+                <viewController storyboardIdentifier="CustomizeFlavorVC" id="K1w-FF-HFy" customClass="CustomizeFlavorViewController" customModule="cakeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FQl-lV-SHc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home cake1" translatesAutoresizingMaskIntoConstraints="NO" id="Cxk-8J-bhT">
+                                <rect key="frame" x="-17" y="-51" width="448" height="390"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="390" id="D9m-xE-Dfj"/>
+                                    <constraint firstAttribute="width" constant="448" id="WLP-vX-5tr"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="19"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScS-BE-uet">
+                                <rect key="frame" x="20" y="44" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3h0-45-lAT"/>
+                                    <constraint firstAttribute="width" constant="40" id="ow4-z8-Q2R"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="house" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="bold"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="homeButtonClicked:" destination="K1w-FF-HFy" eventType="touchUpInside" id="vP0-W1-Fkr"/>
+                                    <segue destination="wCC-Mz-s65" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="M61-7k-QGI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwA-RC-EQs">
+                                <rect key="frame" x="354" y="44" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="GVE-3N-XzG"/>
+                                    <constraint firstAttribute="height" constant="35" id="J3X-5p-beP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="cart" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    </preferredSymbolConfiguration>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cartButtonClicked:" destination="K1w-FF-HFy" eventType="touchUpInside" id="p4f-rw-uKH"/>
+                                    <segue destination="zOt-AT-zc1" kind="presentation" identifier="goToCart" modalPresentationStyle="fullScreen" id="ETv-YP-8tM"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2i-cn-CAy">
+                                <rect key="frame" x="0.0" y="242" width="414" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Blt-cD-cUu">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="a3N-Yl-19q"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Type" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="typeButtonClicked:" destination="K1w-FF-HFy" eventType="touchUpInside" id="j60-ub-mI6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMv-u6-bH9">
+                                        <rect key="frame" x="83" y="0.0" width="82.5" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="4xs-ID-4fT"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Shape" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="21"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="shapeButtonClicked:" destination="K1w-FF-HFy" eventType="touchUpInside" id="yqK-wU-Js1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIQ-bh-Q4B">
+                                        <rect key="frame" x="165.5" y="0.0" width="72" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="aCc-ea-w0s"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Size" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X7-cE-6T6">
+                                        <rect key="frame" x="237.5" y="0.0" width="94" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="pkW-gX-JfV"/>
+                                            <constraint firstAttribute="width" constant="94" id="ygo-FA-v22"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Flavor" cornerStyle="capsule" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6k-4R-c6B">
+                                        <rect key="frame" x="331.5" y="0.0" width="82.5" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="J3I-6F-xQ4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Design" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="19"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="35d-l0-18a"/>
+                                    <constraint firstAttribute="height" constant="75" id="nyF-R0-O3G"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="anf-o3-EUS">
+                                <rect key="frame" x="20" y="374" width="374" height="427"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="KxC-UN-3Al">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmQ-2y-Y1B">
+                                <rect key="frame" x="82" y="811" width="250" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Ifk-Ts-DLQ"/>
+                                    <constraint firstAttribute="width" constant="250" id="ock-74-xjh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="35"/>
+                                    <attributedString key="attributedSubtitle"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="continueButtonClicked:" destination="K1w-FF-HFy" eventType="touchUpInside" id="YBM-0r-YeZ"/>
+                                    <segue destination="gyf-PT-tXR" kind="presentation" identifier="goToCustomizeDesign" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="bC2-rv-YBr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eEp-tD-TYW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cxk-8J-bhT" firstAttribute="leading" secondItem="FQl-lV-SHc" secondAttribute="leading" constant="-17" id="1ir-5y-gI8"/>
+                            <constraint firstItem="anf-o3-EUS" firstAttribute="top" secondItem="eEp-tD-TYW" secondAttribute="top" constant="330" id="4Th-rm-opE"/>
+                            <constraint firstItem="ScS-BE-uet" firstAttribute="leading" secondItem="eEp-tD-TYW" secondAttribute="leading" constant="20" id="6De-k9-FDi"/>
+                            <constraint firstItem="jmQ-2y-Y1B" firstAttribute="centerX" secondItem="FQl-lV-SHc" secondAttribute="centerX" id="9gw-eZ-4RX"/>
+                            <constraint firstItem="ScS-BE-uet" firstAttribute="top" secondItem="eEp-tD-TYW" secondAttribute="top" id="AZn-Fe-dRb"/>
+                            <constraint firstItem="y2i-cn-CAy" firstAttribute="leading" secondItem="eEp-tD-TYW" secondAttribute="leading" id="CzJ-8b-Ou0"/>
+                            <constraint firstItem="fwA-RC-EQs" firstAttribute="top" secondItem="eEp-tD-TYW" secondAttribute="top" id="DEB-PP-M8f"/>
+                            <constraint firstItem="jmQ-2y-Y1B" firstAttribute="top" secondItem="anf-o3-EUS" secondAttribute="bottom" constant="10" id="L7s-Mg-Sej"/>
+                            <constraint firstAttribute="trailing" secondItem="Cxk-8J-bhT" secondAttribute="trailing" constant="-17" id="PTj-0X-mcy"/>
+                            <constraint firstItem="eEp-tD-TYW" firstAttribute="trailing" secondItem="anf-o3-EUS" secondAttribute="trailing" constant="20" id="avV-C7-wmd"/>
+                            <constraint firstItem="Cxk-8J-bhT" firstAttribute="top" secondItem="FQl-lV-SHc" secondAttribute="top" constant="-51" id="fBI-Xa-6af"/>
+                            <constraint firstItem="y2i-cn-CAy" firstAttribute="top" secondItem="eEp-tD-TYW" secondAttribute="top" constant="198" id="grn-CM-83c"/>
+                            <constraint firstItem="eEp-tD-TYW" firstAttribute="trailing" secondItem="y2i-cn-CAy" secondAttribute="trailing" id="iLi-Kb-62y"/>
+                            <constraint firstAttribute="bottom" secondItem="jmQ-2y-Y1B" secondAttribute="bottom" constant="30" id="iR5-ae-ker"/>
+                            <constraint firstItem="anf-o3-EUS" firstAttribute="leading" secondItem="eEp-tD-TYW" secondAttribute="leading" constant="20" id="kTd-qm-ZLP"/>
+                            <constraint firstItem="eEp-tD-TYW" firstAttribute="trailing" secondItem="fwA-RC-EQs" secondAttribute="trailing" constant="20" id="vZC-cC-Gue"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="anf-o3-EUS" id="Ph3-bd-DEz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GgH-ch-2u6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1319" y="50"/>
+        </scene>
+        <!--Customize Design View Controller-->
+        <scene sceneID="nDm-d5-LGm">
+            <objects>
+                <viewController storyboardIdentifier="CustomizeDesignVC" title="Customize Design View Controller" id="gyf-PT-tXR" customClass="CustomizeDesignViewController" customModule="cakeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="clT-6A-dvR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home cake1" translatesAutoresizingMaskIntoConstraints="NO" id="75G-t9-9Yd">
+                                <rect key="frame" x="-17" y="-51" width="448" height="390"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="448" id="efA-YU-LEc"/>
+                                    <constraint firstAttribute="height" constant="390" id="wdF-jP-S6f"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="19"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaJ-Nz-8Bj">
+                                <rect key="frame" x="20" y="44" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="ET6-qw-gpR"/>
+                                    <constraint firstAttribute="height" constant="35" id="wSa-qp-f5Q"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="house" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="bold"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="homeButtonClicked:" destination="gyf-PT-tXR" eventType="touchUpInside" id="v17-B8-nek"/>
+                                    <segue destination="wCC-Mz-s65" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="WOo-Be-hHy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUp-Ef-UQK">
+                                <rect key="frame" x="354" y="44" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="hWI-9I-ua1"/>
+                                    <constraint firstAttribute="height" constant="35" id="hv8-J6-i0N"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="cart" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    </preferredSymbolConfiguration>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cartButtonClicked:" destination="gyf-PT-tXR" eventType="touchUpInside" id="IaQ-NM-Hbo"/>
+                                    <segue destination="zOt-AT-zc1" kind="presentation" identifier="goToCart" modalPresentationStyle="fullScreen" id="tGZ-aP-cot"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mB-Pg-O0C">
+                                <rect key="frame" x="0.0" y="242" width="414" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLT-4d-GNU">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="GI1-86-dHY"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Type" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="typeButtonClicked:" destination="gyf-PT-tXR" eventType="touchUpInside" id="fgM-GK-dqL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNB-6u-8R9">
+                                        <rect key="frame" x="83" y="0.0" width="82.5" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="96W-uZ-RDE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Shape" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="21"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="shapeButtonClicked:" destination="gyf-PT-tXR" eventType="touchUpInside" id="oul-8W-IJ7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuU-D0-iUf">
+                                        <rect key="frame" x="165.5" y="0.0" width="72" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="gAm-ND-mwg"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Size" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usl-v3-7o7">
+                                        <rect key="frame" x="237.5" y="0.0" width="94" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" id="RDJ-2X-sw6"/>
+                                            <constraint firstAttribute="height" constant="75" id="UMH-xi-Jqy"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Flavor" cornerStyle="capsule" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7i-Gz-dGC">
+                                        <rect key="frame" x="331.5" y="0.0" width="82.5" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="Yn3-PX-704"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Design" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="19"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="bBH-Ws-yDI"/>
+                                    <constraint firstAttribute="height" constant="75" id="jXR-I5-rIn"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yK6-TD-90s">
+                                <rect key="frame" x="20" y="374" width="374" height="427"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="jWQ-wT-OBa">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RO-vK-vMs">
+                                <rect key="frame" x="82" y="811" width="250" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="iJL-K3-TOx"/>
+                                    <constraint firstAttribute="width" constant="250" id="zva-4o-4Uo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="35"/>
+                                    <attributedString key="attributedSubtitle"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="continueButtonClicked:" destination="gyf-PT-tXR" eventType="touchUpInside" id="uFE-RL-eWj"/>
+                                    <segue destination="sEU-14-TiC" kind="presentation" identifier="goToCustomizeInfo" modalPresentationStyle="fullScreen" id="5lB-TR-M18"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="js4-Zs-ATu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yK6-TD-90s" firstAttribute="top" secondItem="js4-Zs-ATu" secondAttribute="top" constant="330" id="0ZJ-vH-wCn"/>
+                            <constraint firstItem="1mB-Pg-O0C" firstAttribute="leading" secondItem="js4-Zs-ATu" secondAttribute="leading" id="24a-bY-K66"/>
+                            <constraint firstItem="js4-Zs-ATu" firstAttribute="trailing" secondItem="1mB-Pg-O0C" secondAttribute="trailing" id="40Y-Wx-xA6"/>
+                            <constraint firstItem="BaJ-Nz-8Bj" firstAttribute="leading" secondItem="js4-Zs-ATu" secondAttribute="leading" constant="20" id="5IY-Va-kGT"/>
+                            <constraint firstItem="BaJ-Nz-8Bj" firstAttribute="top" secondItem="js4-Zs-ATu" secondAttribute="top" id="5ez-TG-GEV"/>
+                            <constraint firstItem="1mB-Pg-O0C" firstAttribute="top" secondItem="js4-Zs-ATu" secondAttribute="top" constant="198" id="6MS-Kf-5lr"/>
+                            <constraint firstItem="75G-t9-9Yd" firstAttribute="leading" secondItem="clT-6A-dvR" secondAttribute="leading" constant="-17" id="GXG-Mo-g7h"/>
+                            <constraint firstItem="js4-Zs-ATu" firstAttribute="trailing" secondItem="yK6-TD-90s" secondAttribute="trailing" constant="20" id="J5g-gc-Olk"/>
+                            <constraint firstAttribute="bottom" secondItem="8RO-vK-vMs" secondAttribute="bottom" constant="30" id="N15-gf-Rh9"/>
+                            <constraint firstItem="js4-Zs-ATu" firstAttribute="trailing" secondItem="IUp-Ef-UQK" secondAttribute="trailing" constant="20" id="ROU-OT-Zyk"/>
+                            <constraint firstAttribute="trailing" secondItem="75G-t9-9Yd" secondAttribute="trailing" constant="-17" id="SaX-8e-BQH"/>
+                            <constraint firstItem="IUp-Ef-UQK" firstAttribute="top" secondItem="js4-Zs-ATu" secondAttribute="top" id="eZZ-3S-EMl"/>
+                            <constraint firstItem="yK6-TD-90s" firstAttribute="leading" secondItem="js4-Zs-ATu" secondAttribute="leading" constant="20" id="fSa-2V-ERB"/>
+                            <constraint firstItem="8RO-vK-vMs" firstAttribute="centerX" secondItem="clT-6A-dvR" secondAttribute="centerX" id="fj8-li-aaE"/>
+                            <constraint firstItem="75G-t9-9Yd" firstAttribute="top" secondItem="clT-6A-dvR" secondAttribute="top" constant="-51" id="gY2-IR-2Ct"/>
+                            <constraint firstItem="8RO-vK-vMs" firstAttribute="top" secondItem="yK6-TD-90s" secondAttribute="bottom" constant="10" id="iAi-RG-0L4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="yK6-TD-90s" id="cF1-Wa-Ksi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvP-5B-Get" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2131.8840579710145" y="49.553571428571423"/>
+        </scene>
+        <!--CustomizeInfoVC-->
+        <scene sceneID="r8e-Pm-lP6">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="goToCustomizeInfo" storyboardName="CustomizeInfo" referencedIdentifier="CustomizeInfoVC" id="sEU-14-TiC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vQP-Up-exs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2875" y="50"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="M61-7k-QGI"/>
+        <segue reference="ETv-YP-8tM"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="Design4" width="1000" height="1000"/>
         <image name="cart" catalog="system" width="128" height="102"/>
-        <image name="design1" width="760" height="1029"/>
-        <image name="design2" width="720" height="960"/>
-        <image name="design5" width="700" height="700"/>
         <image name="home cake1" width="612" height="408"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">

@@ -1,0 +1,67 @@
+import UIKit
+
+class AdminOrderDelivered
+ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+   
+    @IBOutlet weak var tableView: UITableView!
+    
+    var orderProduct = [OrderProduct]()
+    var name = ""
+    var id = 0
+    var orderId = ""
+    var image = ""
+    var category = ""
+    var qty = 0
+    var subTotal = 0
+    var orderDate = ""
+    var orderTime = ""
+    var total = 0
+    var orderProducts = [OrderProduct]()
+    var orderProductItem = OrderProduct(name: "", id: 0, orderId: "", image: "", category: "", qty: 0, subTotal: 0)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let orderProduct1 = OrderProduct(name: "Vanilla Cake", id: 1, orderId: "1000", image: "cake8", category: "new", qty: 3, subTotal: 400)
+        let orderProduct2 = OrderProduct(name: "Ice-cream Cake", id: 1, orderId: "1000", image: "cake10", category: "new", qty: 2, subTotal: 300)
+        
+        orderProducts.append(orderProduct1)
+        orderProducts.append(orderProduct2)
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: Identifiers.OrderItemCell, bundle: nil), forCellReuseIdentifier: Identifiers.OrderItemCell)
+
+    }
+    
+    
+    @IBAction func backButtonClicked(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "goToAdminHome", sender: self)
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return orderProducts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: Identifiers.OrderItemCell, for: indexPath) as? OrderItemCell {
+            
+//            let orderProduct = OrderItemCell[indexPath.row]
+            cell.configureCell(orderProduct: orderProducts[indexPath.row])
+            //            (cake_name,cake_image,cake_desc,cake_price,cake_size,cake_cal) = cell.getData(product: products[indexPath.item])
+//            (name,image,qty,subTotal,orderDate) = cell.getData(orderProduct: orderProducts[indexPath.item])
+//            return cell
+
+        }
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 100
+    }
+
+}

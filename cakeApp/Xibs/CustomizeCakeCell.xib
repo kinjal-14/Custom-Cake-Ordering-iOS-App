@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomizeCakeCell" id="gTV-IL-0wX" customClass="CustomizeCakeCell" customModule="cakeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="F02-P9-iIp">
+                        <rect key="frame" x="1" y="-10" width="169" height="190"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cake4" translatesAutoresizingMaskIntoConstraints="NO" id="7vo-YS-8e1">
+                                <rect key="frame" x="0.0" y="0.0" width="169" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="Adl-MM-U1q"/>
+                                    <constraint firstAttribute="width" constant="171" id="g3x-HS-dPT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cake 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="M4V-cD-M1v">
+                                <rect key="frame" x="0.0" y="164" width="50.5" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="7vo-YS-8e1" firstAttribute="top" secondItem="F02-P9-iIp" secondAttribute="top" id="47V-8z-VVm"/>
+                            <constraint firstItem="M4V-cD-M1v" firstAttribute="top" secondItem="7vo-YS-8e1" secondAttribute="bottom" constant="2" id="8ku-dp-yud"/>
+                            <constraint firstAttribute="width" constant="169" id="8m5-Gv-6Pg"/>
+                            <constraint firstItem="M4V-cD-M1v" firstAttribute="leading" secondItem="F02-P9-iIp" secondAttribute="leading" id="BDl-dg-GeS"/>
+                            <constraint firstItem="7vo-YS-8e1" firstAttribute="leading" secondItem="F02-P9-iIp" secondAttribute="leading" id="KCu-Bt-LBe"/>
+                            <constraint firstAttribute="height" constant="190" id="LfK-Ym-DQ7"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="162" height="193"/>
+            <connections>
+                <outlet property="cakeTypeImage" destination="7vo-YS-8e1" id="BV8-aq-gSK"/>
+                <outlet property="cakeTypeName" destination="M4V-cD-M1v" id="Ntq-7z-4fC"/>
+            </connections>
+            <point key="canvasLocation" x="407.24637681159425" y="107.8125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cake4" width="235" height="343"/>
+    </resources>
+</document>
