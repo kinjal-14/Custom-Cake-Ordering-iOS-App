@@ -8,10 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		640F15FF13706571CA8197F5 /* Pods_cakeApp_cakeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A954AB55B43D97056AF10905 /* Pods_cakeApp_cakeAppUITests.framework */; };
+		B40BCD1027EE675E00B39EFF /* ShoppingCartViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40BCD0F27EE675E00B39EFF /* ShoppingCartViewViewController.swift */; };
+		B40BCD1227EE68D500B39EFF /* ShoppingCart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40BCD1127EE68D500B39EFF /* ShoppingCart.storyboard */; };
 		B40F48CA27DBF8DB00AAD37D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40F48C927DBF8DB00AAD37D /* Login.storyboard */; };
 		B40F48CC27DBFFCE00AAD37D /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40F48CB27DBFFCE00AAD37D /* SignUp.storyboard */; };
 		B40F48CF27DC062E00AAD37D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F48CE27DC062E00AAD37D /* LoginViewController.swift */; };
 		B40F48D127DC080100AAD37D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F48D027DC080100AAD37D /* SignUpViewController.swift */; };
+		B412631927E2B45000DED9EF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B412631827E2B45000DED9EF /* ProfileViewController.swift */; };
+		B412631B27E2B47600DED9EF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B412631A27E2B47600DED9EF /* Profile.storyboard */; };
+		B412631D27E2B78100DED9EF /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B412631C27E2B78100DED9EF /* Contact.storyboard */; };
+		B415647627FB94FD00304945 /* OrderDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B415647427FB94FD00304945 /* OrderDetailCell.swift */; };
+		B415647727FB94FD00304945 /* OrderDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B415647527FB94FD00304945 /* OrderDetailCell.xib */; };
+		B415647927FBB09600304945 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B415647827FBB09600304945 /* OrderDetail.swift */; };
+		B419AFD327F8B40A00AE3817 /* OrderItemProcessingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419AFD127F8B40A00AE3817 /* OrderItemProcessingCell.swift */; };
+		B419AFD427F8B40A00AE3817 /* OrderItemProcessingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B419AFD227F8B40A00AE3817 /* OrderItemProcessingCell.xib */; };
+		B41B161E27E139E200C66760 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B41B161D27E139E200C66760 /* GoogleService-Info.plist */; };
+		B41B162027E14CFF00C66760 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41B161F27E14CFF00C66760 /* Account.storyboard */; };
+		B41B162227E186D300C66760 /* Pre-made.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41B162127E186D300C66760 /* Pre-made.storyboard */; };
+		B41B162427E1890A00C66760 /* PremadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B162327E1890A00C66760 /* PremadeViewController.swift */; };
+		B41E3DB727FA12960053DB13 /* AdminOrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41E3DB627FA12960053DB13 /* AdminOrderDetail.storyboard */; };
 		B423819827DBF4DD00E66E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423819727DBF4DD00E66E0F /* AppDelegate.swift */; };
 		B423819A27DBF4DD00E66E0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423819927DBF4DD00E66E0F /* SceneDelegate.swift */; };
 		B423819C27DBF4DD00E66E0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423819B27DBF4DD00E66E0F /* ViewController.swift */; };
@@ -22,8 +37,58 @@
 		B42381B227DBF4DD00E66E0F /* cakeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42381B127DBF4DD00E66E0F /* cakeAppTests.swift */; };
 		B42381BC27DBF4DD00E66E0F /* cakeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42381BB27DBF4DD00E66E0F /* cakeAppUITests.swift */; };
 		B42381BE27DBF4DD00E66E0F /* cakeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42381BD27DBF4DD00E66E0F /* cakeAppUITestsLaunchTests.swift */; };
+		B42F6F5427EBE01200C829EF /* Confirmation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42F6F5327EBE01200C829EF /* Confirmation.storyboard */; };
+		B42F6F5627EBE02100C829EF /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F6F5527EBE02100C829EF /* ConfirmationViewController.swift */; };
+		B42F6F5827EC0FA400C829EF /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F6F5727EC0FA400C829EF /* ContactViewController.swift */; };
+		B43FC56B27EAAF0F00E2B9AF /* Shipping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43FC56A27EAAF0F00E2B9AF /* Shipping.storyboard */; };
+		B43FC56D27EAB05500E2B9AF /* ShippingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43FC56C27EAB05500E2B9AF /* ShippingViewController.swift */; };
+		B43FC56F27EAB4C400E2B9AF /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43FC56E27EAB4C400E2B9AF /* Payment.storyboard */; };
+		B43FC57127EAB4D300E2B9AF /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43FC57027EAB4D300E2B9AF /* PaymentViewController.swift */; };
+		B456D25827EAA35A009B58FA /* CartProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456D25727EAA35A009B58FA /* CartProduct.swift */; };
+		B45D979B27F62F03006C2AB3 /* Admin_Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45D979A27F62F03006C2AB3 /* Admin_Home.storyboard */; };
+		B45D979D27F62F12006C2AB3 /* AdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D979C27F62F12006C2AB3 /* AdminHomeViewController.swift */; };
+		B45D979F27F636D1006C2AB3 /* AdminOrderDelivered.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45D979E27F636D1006C2AB3 /* AdminOrderDelivered.storyboard */; };
+		B45D97A827F63D7B006C2AB3 /* OrderItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D97A627F63D7B006C2AB3 /* OrderItemCell.swift */; };
+		B45D97A927F63D7B006C2AB3 /* OrderItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45D97A727F63D7B006C2AB3 /* OrderItemCell.xib */; };
+		B45D97AB27F63F36006C2AB3 /* OrderProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D97AA27F63F36006C2AB3 /* OrderProduct.swift */; };
+		B46441B927EA78B300963308 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46441B827EA78B300963308 /* Cart.storyboard */; };
+		B46441BB27EA78C300963308 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46441BA27EA78C300963308 /* CartViewController.swift */; };
+		B4659F5927F655BF006F18DF /* AdminOrderDeliveredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4659F5827F655BF006F18DF /* AdminOrderDeliveredViewController.swift */; };
+		B4659F5B27F65664006F18DF /* AdminOrderProcessing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4659F5A27F65664006F18DF /* AdminOrderProcessing.storyboard */; };
+		B4659F5D27F65685006F18DF /* AdminOrderProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4659F5C27F65685006F18DF /* AdminOrderProcessingViewController.swift */; };
+		B4659F5F27F65691006F18DF /* AdminOrderCancelledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4659F5E27F65691006F18DF /* AdminOrderCancelledViewController.swift */; };
+		B4659F6127F6569F006F18DF /* AdminOrderCancelled.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4659F6027F6569F006F18DF /* AdminOrderCancelled.storyboard */; };
+		B4659F6527F7735B006F18DF /* AdminDeliveredDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4659F6427F7735B006F18DF /* AdminDeliveredDetailViewController.swift */; };
+		B465FDA327EE4C7A000D095E /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B465FDA127EE4C7A000D095E /* CartItemCell.swift */; };
+		B465FDA427EE4C7A000D095E /* CartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B465FDA227EE4C7A000D095E /* CartItemCell.xib */; };
 		B47B3FB727DFE77F0013D584 /* CustomizeCake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47B3FB627DFE77F0013D584 /* CustomizeCake.storyboard */; };
-		B4C72F3827DFD4F1008E7463 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C72F3727DFD4F1008E7463 /* Utilities.swift */; };
+		B48A9B4527E217B60090A470 /* CakeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A9B4427E217B60090A470 /* CakeDetailsViewController.swift */; };
+		B4A1B6C62803C52A00AA2D34 /* AdminProcessingDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A1B6C52803C52A00AA2D34 /* AdminProcessingDetail.storyboard */; };
+		B4C2D78527E53CDC00647E77 /* CustomizeCakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C2D78427E53CDC00647E77 /* CustomizeCakeViewController.swift */; };
+		B4C2D78827E5467C00647E77 /* CustomizeCakeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C2D78627E5467C00647E77 /* CustomizeCakeCell.swift */; };
+		B4C2D78927E5467C00647E77 /* CustomizeCakeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C2D78727E5467C00647E77 /* CustomizeCakeCell.xib */; };
+		B4C2D78B27E548D500647E77 /* CustomizeCake.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C2D78A27E548D500647E77 /* CustomizeCake.swift */; };
+		B4D2859627E18C4800D17C5A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2859527E18C4800D17C5A /* AccountViewController.swift */; };
+		B4D2859927E1929000D17C5A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2859827E1929000D17C5A /* Product.swift */; };
+		B4D2859D27E193BE00D17C5A /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2859B27E193BE00D17C5A /* ProductCell.swift */; };
+		B4D2859E27E193BE00D17C5A /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4D2859C27E193BE00D17C5A /* ProductCell.xib */; };
+		B4D285A127E1B8FB00D17C5A /* CakeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D285A027E1B8FB00D17C5A /* CakeDetails.storyboard */; };
+		B4D3694B27E0277F000AC8AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D3694A27E0277F000AC8AD /* Constants.swift */; };
+		B4DA9FFA280DA7C0007AFC72 /* AdminCompletedOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DA9FF9280DA7BF007AFC72 /* AdminCompletedOrderViewController.swift */; };
+		B4DA9FFC280DA7D2007AFC72 /* AdminCompletedOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4DA9FFB280DA7D2007AFC72 /* AdminCompletedOrder.storyboard */; };
+		B4DA9FFE280DCAF7007AFC72 /* AdminProcessingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DA9FFD280DCAF7007AFC72 /* AdminProcessingDetailViewController.swift */; };
+		B4E139FE27F7AA5800B08B92 /* UserOrders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E139FD27F7AA5800B08B92 /* UserOrders.storyboard */; };
+		B4E13A0027F7AAE500B08B92 /* DeliveredOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E139FF27F7AAE500B08B92 /* DeliveredOrderViewController.swift */; };
+		B4E13A0227F7AAF100B08B92 /* ProcessingOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E13A0127F7AAF100B08B92 /* ProcessingOrderViewController.swift */; };
+		B4E13A0427F7AB0100B08B92 /* CancelledOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E13A0327F7AB0100B08B92 /* CancelledOrderViewController.swift */; };
+		B4E13A0827F7AFF700B08B92 /* AdminOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E13A0727F7AFF700B08B92 /* AdminOrderDetailViewController.swift */; };
+		B4E3FFEC27EB770B000D9904 /* CustomizeShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3FFEB27EB770A000D9904 /* CustomizeShapeViewController.swift */; };
+		B4E3FFEE27EB7730000D9904 /* CustomizeSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3FFED27EB7730000D9904 /* CustomizeSizeViewController.swift */; };
+		B4E3FFF027EB774F000D9904 /* CustomizeFlavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3FFEF27EB774F000D9904 /* CustomizeFlavorViewController.swift */; };
+		B4E3FFF227EB775D000D9904 /* CustomizeDesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3FFF127EB775D000D9904 /* CustomizeDesignViewController.swift */; };
+		B4F025E227E9521400DC1932 /* CustomizeInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F025E127E9521400DC1932 /* CustomizeInfo.storyboard */; };
+		B4F025E427E952EC00DC1932 /* CustomizeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F025E327E952EC00DC1932 /* CustomizeInfoViewController.swift */; };
+		B4FDFB9527F3753F00FD9472 /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FDFB9427F3753F00FD9472 /* SliderCollectionViewCell.swift */; };
 		CEA0969BF2D6402B7B283FA7 /* Pods_cakeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47100787E8B6BC50CEA7F9FB /* Pods_cakeAppTests.framework */; };
 		E842410DAAB92B90232F9A37 /* Pods_cakeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2405D42EFAAD84C8603D6 /* Pods_cakeApp.framework */; };
 /* End PBXBuildFile section */
@@ -54,10 +119,25 @@
 		76CB25CF2FBF083BF1736E72 /* Pods-cakeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cakeAppTests.release.xcconfig"; path = "Target Support Files/Pods-cakeAppTests/Pods-cakeAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		90A2405D42EFAAD84C8603D6 /* Pods_cakeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cakeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A954AB55B43D97056AF10905 /* Pods_cakeApp_cakeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cakeApp_cakeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40BCD0F27EE675E00B39EFF /* ShoppingCartViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewViewController.swift; sourceTree = "<group>"; };
+		B40BCD1127EE68D500B39EFF /* ShoppingCart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShoppingCart.storyboard; sourceTree = "<group>"; };
 		B40F48C927DBF8DB00AAD37D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B40F48CB27DBFFCE00AAD37D /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		B40F48CE27DC062E00AAD37D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B40F48D027DC080100AAD37D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B412631827E2B45000DED9EF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B412631A27E2B47600DED9EF /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		B412631C27E2B78100DED9EF /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		B415647427FB94FD00304945 /* OrderDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailCell.swift; sourceTree = "<group>"; };
+		B415647527FB94FD00304945 /* OrderDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailCell.xib; sourceTree = "<group>"; };
+		B415647827FBB09600304945 /* OrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
+		B419AFD127F8B40A00AE3817 /* OrderItemProcessingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemProcessingCell.swift; sourceTree = "<group>"; };
+		B419AFD227F8B40A00AE3817 /* OrderItemProcessingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderItemProcessingCell.xib; sourceTree = "<group>"; };
+		B41B161D27E139E200C66760 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B41B161F27E14CFF00C66760 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		B41B162127E186D300C66760 /* Pre-made.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Pre-made.storyboard"; sourceTree = "<group>"; };
+		B41B162327E1890A00C66760 /* PremadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremadeViewController.swift; sourceTree = "<group>"; };
+		B41E3DB627FA12960053DB13 /* AdminOrderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminOrderDetail.storyboard; sourceTree = "<group>"; };
 		B423819427DBF4DD00E66E0F /* cakeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cakeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B423819727DBF4DD00E66E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B423819927DBF4DD00E66E0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,9 +152,59 @@
 		B42381B727DBF4DD00E66E0F /* cakeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cakeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42381BB27DBF4DD00E66E0F /* cakeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cakeAppUITests.swift; sourceTree = "<group>"; };
 		B42381BD27DBF4DD00E66E0F /* cakeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cakeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B442051227DFEEF2008BC801 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B42F6F5327EBE01200C829EF /* Confirmation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Confirmation.storyboard; sourceTree = "<group>"; };
+		B42F6F5527EBE02100C829EF /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		B42F6F5727EC0FA400C829EF /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		B43FC56A27EAAF0F00E2B9AF /* Shipping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shipping.storyboard; sourceTree = "<group>"; };
+		B43FC56C27EAB05500E2B9AF /* ShippingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingViewController.swift; sourceTree = "<group>"; };
+		B43FC56E27EAB4C400E2B9AF /* Payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
+		B43FC57027EAB4D300E2B9AF /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		B456D25727EAA35A009B58FA /* CartProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProduct.swift; sourceTree = "<group>"; };
+		B45D979A27F62F03006C2AB3 /* Admin_Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Admin_Home.storyboard; sourceTree = "<group>"; };
+		B45D979C27F62F12006C2AB3 /* AdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewController.swift; sourceTree = "<group>"; };
+		B45D979E27F636D1006C2AB3 /* AdminOrderDelivered.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminOrderDelivered.storyboard; sourceTree = "<group>"; };
+		B45D97A627F63D7B006C2AB3 /* OrderItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemCell.swift; sourceTree = "<group>"; };
+		B45D97A727F63D7B006C2AB3 /* OrderItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderItemCell.xib; sourceTree = "<group>"; };
+		B45D97AA27F63F36006C2AB3 /* OrderProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderProduct.swift; sourceTree = "<group>"; };
+		B46441B827EA78B300963308 /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
+		B46441BA27EA78C300963308 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		B4659F5827F655BF006F18DF /* AdminOrderDeliveredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminOrderDeliveredViewController.swift; sourceTree = "<group>"; };
+		B4659F5A27F65664006F18DF /* AdminOrderProcessing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminOrderProcessing.storyboard; sourceTree = "<group>"; };
+		B4659F5C27F65685006F18DF /* AdminOrderProcessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminOrderProcessingViewController.swift; sourceTree = "<group>"; };
+		B4659F5E27F65691006F18DF /* AdminOrderCancelledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminOrderCancelledViewController.swift; sourceTree = "<group>"; };
+		B4659F6027F6569F006F18DF /* AdminOrderCancelled.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminOrderCancelled.storyboard; sourceTree = "<group>"; };
+		B4659F6427F7735B006F18DF /* AdminDeliveredDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDeliveredDetailViewController.swift; sourceTree = "<group>"; };
+		B465FDA127EE4C7A000D095E /* CartItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCell.swift; sourceTree = "<group>"; };
+		B465FDA227EE4C7A000D095E /* CartItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartItemCell.xib; sourceTree = "<group>"; };
 		B47B3FB627DFE77F0013D584 /* CustomizeCake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomizeCake.storyboard; sourceTree = "<group>"; };
-		B4C72F3727DFD4F1008E7463 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B48A9B4427E217B60090A470 /* CakeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailsViewController.swift; sourceTree = "<group>"; };
+		B48F4E402809D8B5002F627A /* cakeApp_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cakeApp_bridge.h; sourceTree = "<group>"; };
+		B4A1B6C52803C52A00AA2D34 /* AdminProcessingDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminProcessingDetail.storyboard; sourceTree = "<group>"; };
+		B4C2D78427E53CDC00647E77 /* CustomizeCakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeCakeViewController.swift; sourceTree = "<group>"; };
+		B4C2D78627E5467C00647E77 /* CustomizeCakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeCakeCell.swift; sourceTree = "<group>"; };
+		B4C2D78727E5467C00647E77 /* CustomizeCakeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomizeCakeCell.xib; sourceTree = "<group>"; };
+		B4C2D78A27E548D500647E77 /* CustomizeCake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeCake.swift; sourceTree = "<group>"; };
+		B4D2859527E18C4800D17C5A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		B4D2859827E1929000D17C5A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B4D2859B27E193BE00D17C5A /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		B4D2859C27E193BE00D17C5A /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		B4D285A027E1B8FB00D17C5A /* CakeDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CakeDetails.storyboard; sourceTree = "<group>"; };
+		B4D3694A27E0277F000AC8AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B4DA9FF9280DA7BF007AFC72 /* AdminCompletedOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCompletedOrderViewController.swift; sourceTree = "<group>"; };
+		B4DA9FFB280DA7D2007AFC72 /* AdminCompletedOrder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminCompletedOrder.storyboard; sourceTree = "<group>"; };
+		B4DA9FFD280DCAF7007AFC72 /* AdminProcessingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminProcessingDetailViewController.swift; sourceTree = "<group>"; };
+		B4E139FD27F7AA5800B08B92 /* UserOrders.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserOrders.storyboard; sourceTree = "<group>"; };
+		B4E139FF27F7AAE500B08B92 /* DeliveredOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveredOrderViewController.swift; sourceTree = "<group>"; };
+		B4E13A0127F7AAF100B08B92 /* ProcessingOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingOrderViewController.swift; sourceTree = "<group>"; };
+		B4E13A0327F7AB0100B08B92 /* CancelledOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelledOrderViewController.swift; sourceTree = "<group>"; };
+		B4E13A0727F7AFF700B08B92 /* AdminOrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminOrderDetailViewController.swift; sourceTree = "<group>"; };
+		B4E3FFEB27EB770A000D9904 /* CustomizeShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeShapeViewController.swift; sourceTree = "<group>"; };
+		B4E3FFED27EB7730000D9904 /* CustomizeSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeSizeViewController.swift; sourceTree = "<group>"; };
+		B4E3FFEF27EB774F000D9904 /* CustomizeFlavorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeFlavorViewController.swift; sourceTree = "<group>"; };
+		B4E3FFF127EB775D000D9904 /* CustomizeDesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeDesignViewController.swift; sourceTree = "<group>"; };
+		B4F025E127E9521400DC1932 /* CustomizeInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomizeInfo.storyboard; sourceTree = "<group>"; };
+		B4F025E327E952EC00DC1932 /* CustomizeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeInfoViewController.swift; sourceTree = "<group>"; };
+		B4FDFB9427F3753F00FD9472 /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		EAD17C1BBE8AF2C8AA558E56 /* Pods-cakeApp-cakeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cakeApp-cakeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-cakeApp-cakeAppUITests/Pods-cakeApp-cakeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,7 +246,6 @@
 				62E1419E2FE761A7CFA7C4A5 /* Pods-cakeAppTests.debug.xcconfig */,
 				76CB25CF2FBF083BF1736E72 /* Pods-cakeAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,7 +264,35 @@
 			children = (
 				B40F48CE27DC062E00AAD37D /* LoginViewController.swift */,
 				B40F48D027DC080100AAD37D /* SignUpViewController.swift */,
-				B4C72F3727DFD4F1008E7463 /* Utilities.swift */,
+				B4D3694A27E0277F000AC8AD /* Constants.swift */,
+				B41B162327E1890A00C66760 /* PremadeViewController.swift */,
+				B4D2859527E18C4800D17C5A /* AccountViewController.swift */,
+				B48A9B4427E217B60090A470 /* CakeDetailsViewController.swift */,
+				B412631827E2B45000DED9EF /* ProfileViewController.swift */,
+				B4C2D78427E53CDC00647E77 /* CustomizeCakeViewController.swift */,
+				B4F025E327E952EC00DC1932 /* CustomizeInfoViewController.swift */,
+				B46441BA27EA78C300963308 /* CartViewController.swift */,
+				B43FC56C27EAB05500E2B9AF /* ShippingViewController.swift */,
+				B43FC57027EAB4D300E2B9AF /* PaymentViewController.swift */,
+				B4E3FFEB27EB770A000D9904 /* CustomizeShapeViewController.swift */,
+				B4E3FFED27EB7730000D9904 /* CustomizeSizeViewController.swift */,
+				B4E3FFEF27EB774F000D9904 /* CustomizeFlavorViewController.swift */,
+				B4E3FFF127EB775D000D9904 /* CustomizeDesignViewController.swift */,
+				B42F6F5527EBE02100C829EF /* ConfirmationViewController.swift */,
+				B42F6F5727EC0FA400C829EF /* ContactViewController.swift */,
+				B40BCD0F27EE675E00B39EFF /* ShoppingCartViewViewController.swift */,
+				B4FDFB9427F3753F00FD9472 /* SliderCollectionViewCell.swift */,
+				B45D979C27F62F12006C2AB3 /* AdminHomeViewController.swift */,
+				B4659F5827F655BF006F18DF /* AdminOrderDeliveredViewController.swift */,
+				B4659F5C27F65685006F18DF /* AdminOrderProcessingViewController.swift */,
+				B4659F5E27F65691006F18DF /* AdminOrderCancelledViewController.swift */,
+				B4659F6427F7735B006F18DF /* AdminDeliveredDetailViewController.swift */,
+				B4E139FF27F7AAE500B08B92 /* DeliveredOrderViewController.swift */,
+				B4E13A0127F7AAF100B08B92 /* ProcessingOrderViewController.swift */,
+				B4E13A0327F7AB0100B08B92 /* CancelledOrderViewController.swift */,
+				B4E13A0727F7AFF700B08B92 /* AdminOrderDetailViewController.swift */,
+				B4DA9FF9280DA7BF007AFC72 /* AdminCompletedOrderViewController.swift */,
+				B4DA9FFD280DCAF7007AFC72 /* AdminProcessingDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,6 +300,7 @@
 		B423818B27DBF4DD00E66E0F = {
 			isa = PBXGroup;
 			children = (
+				B48F4E402809D8B5002F627A /* cakeApp_bridge.h */,
 				B423819627DBF4DD00E66E0F /* cakeApp */,
 				B42381B027DBF4DD00E66E0F /* cakeAppTests */,
 				B42381BA27DBF4DD00E66E0F /* cakeAppUITests */,
@@ -165,6 +323,9 @@
 		B423819627DBF4DD00E66E0F /* cakeApp */ = {
 			isa = PBXGroup;
 			children = (
+				B4D2859F27E193E400D17C5A /* Xibs */,
+				B4D2859A27E1937600D17C5A /* View */,
+				B4D2859727E1927200D17C5A /* Model */,
 				B40F48CD27DC061F00AAD37D /* Controller */,
 				B423819727DBF4DD00E66E0F /* AppDelegate.swift */,
 				B423819927DBF4DD00E66E0F /* SceneDelegate.swift */,
@@ -175,9 +336,28 @@
 				B42381A827DBF4DD00E66E0F /* Info.plist */,
 				B42381A027DBF4DD00E66E0F /* cakeApp.xcdatamodeld */,
 				B40F48C927DBF8DB00AAD37D /* Login.storyboard */,
+				B41B161D27E139E200C66760 /* GoogleService-Info.plist */,
 				B40F48CB27DBFFCE00AAD37D /* SignUp.storyboard */,
-				B442051227DFEEF2008BC801 /* GoogleService-Info.plist */,
 				B47B3FB627DFE77F0013D584 /* CustomizeCake.storyboard */,
+				B41B161F27E14CFF00C66760 /* Account.storyboard */,
+				B41B162127E186D300C66760 /* Pre-made.storyboard */,
+				B4D285A027E1B8FB00D17C5A /* CakeDetails.storyboard */,
+				B412631A27E2B47600DED9EF /* Profile.storyboard */,
+				B412631C27E2B78100DED9EF /* Contact.storyboard */,
+				B4F025E127E9521400DC1932 /* CustomizeInfo.storyboard */,
+				B46441B827EA78B300963308 /* Cart.storyboard */,
+				B43FC56A27EAAF0F00E2B9AF /* Shipping.storyboard */,
+				B43FC56E27EAB4C400E2B9AF /* Payment.storyboard */,
+				B42F6F5327EBE01200C829EF /* Confirmation.storyboard */,
+				B40BCD1127EE68D500B39EFF /* ShoppingCart.storyboard */,
+				B45D979A27F62F03006C2AB3 /* Admin_Home.storyboard */,
+				B45D979E27F636D1006C2AB3 /* AdminOrderDelivered.storyboard */,
+				B4659F5A27F65664006F18DF /* AdminOrderProcessing.storyboard */,
+				B4659F6027F6569F006F18DF /* AdminOrderCancelled.storyboard */,
+				B4E139FD27F7AA5800B08B92 /* UserOrders.storyboard */,
+				B41E3DB627FA12960053DB13 /* AdminOrderDetail.storyboard */,
+				B4A1B6C52803C52A00AA2D34 /* AdminProcessingDetail.storyboard */,
+				B4DA9FFB280DA7D2007AFC72 /* AdminCompletedOrder.storyboard */,
 			);
 			path = cakeApp;
 			sourceTree = "<group>";
@@ -197,6 +377,44 @@
 				B42381BD27DBF4DD00E66E0F /* cakeAppUITestsLaunchTests.swift */,
 			);
 			path = cakeAppUITests;
+			sourceTree = "<group>";
+		};
+		B4D2859727E1927200D17C5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4D2859827E1929000D17C5A /* Product.swift */,
+				B4C2D78A27E548D500647E77 /* CustomizeCake.swift */,
+				B456D25727EAA35A009B58FA /* CartProduct.swift */,
+				B45D97AA27F63F36006C2AB3 /* OrderProduct.swift */,
+				B415647827FBB09600304945 /* OrderDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4D2859A27E1937600D17C5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4D2859B27E193BE00D17C5A /* ProductCell.swift */,
+				B465FDA127EE4C7A000D095E /* CartItemCell.swift */,
+				B4C2D78627E5467C00647E77 /* CustomizeCakeCell.swift */,
+				B45D97A627F63D7B006C2AB3 /* OrderItemCell.swift */,
+				B419AFD127F8B40A00AE3817 /* OrderItemProcessingCell.swift */,
+				B415647427FB94FD00304945 /* OrderDetailCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4D2859F27E193E400D17C5A /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				B4C2D78727E5467C00647E77 /* CustomizeCakeCell.xib */,
+				B4D2859C27E193BE00D17C5A /* ProductCell.xib */,
+				B465FDA227EE4C7A000D095E /* CartItemCell.xib */,
+				B45D97A727F63D7B006C2AB3 /* OrderItemCell.xib */,
+				B419AFD227F8B40A00AE3817 /* OrderItemProcessingCell.xib */,
+				B415647527FB94FD00304945 /* OrderDetailCell.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,12 +526,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46441B927EA78B300963308 /* Cart.storyboard in Resources */,
+				B465FDA427EE4C7A000D095E /* CartItemCell.xib in Resources */,
+				B45D979F27F636D1006C2AB3 /* AdminOrderDelivered.storyboard in Resources */,
+				B43FC56F27EAB4C400E2B9AF /* Payment.storyboard in Resources */,
+				B45D979B27F62F03006C2AB3 /* Admin_Home.storyboard in Resources */,
 				B47B3FB727DFE77F0013D584 /* CustomizeCake.storyboard in Resources */,
+				B43FC56B27EAAF0F00E2B9AF /* Shipping.storyboard in Resources */,
+				B4C2D78927E5467C00647E77 /* CustomizeCakeCell.xib in Resources */,
+				B41B162227E186D300C66760 /* Pre-made.storyboard in Resources */,
 				B40F48CA27DBF8DB00AAD37D /* Login.storyboard in Resources */,
 				B42381A727DBF4DD00E66E0F /* LaunchScreen.storyboard in Resources */,
+				B4A1B6C62803C52A00AA2D34 /* AdminProcessingDetail.storyboard in Resources */,
+				B412631B27E2B47600DED9EF /* Profile.storyboard in Resources */,
+				B4659F5B27F65664006F18DF /* AdminOrderProcessing.storyboard in Resources */,
+				B4E139FE27F7AA5800B08B92 /* UserOrders.storyboard in Resources */,
 				B42381A427DBF4DD00E66E0F /* Assets.xcassets in Resources */,
+				B415647727FB94FD00304945 /* OrderDetailCell.xib in Resources */,
 				B423819F27DBF4DD00E66E0F /* Main.storyboard in Resources */,
+				B40BCD1227EE68D500B39EFF /* ShoppingCart.storyboard in Resources */,
+				B41E3DB727FA12960053DB13 /* AdminOrderDetail.storyboard in Resources */,
+				B42F6F5427EBE01200C829EF /* Confirmation.storyboard in Resources */,
 				B40F48CC27DBFFCE00AAD37D /* SignUp.storyboard in Resources */,
+				B4F025E227E9521400DC1932 /* CustomizeInfo.storyboard in Resources */,
+				B4DA9FFC280DA7D2007AFC72 /* AdminCompletedOrder.storyboard in Resources */,
+				B4D2859E27E193BE00D17C5A /* ProductCell.xib in Resources */,
+				B41B162027E14CFF00C66760 /* Account.storyboard in Resources */,
+				B4659F6127F6569F006F18DF /* AdminOrderCancelled.storyboard in Resources */,
+				B41B161E27E139E200C66760 /* GoogleService-Info.plist in Resources */,
+				B419AFD427F8B40A00AE3817 /* OrderItemProcessingCell.xib in Resources */,
+				B45D97A927F63D7B006C2AB3 /* OrderItemCell.xib in Resources */,
+				B4D285A127E1B8FB00D17C5A /* CakeDetails.storyboard in Resources */,
+				B412631D27E2B78100DED9EF /* Contact.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,12 +686,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				B40F48D127DC080100AAD37D /* SignUpViewController.swift in Sources */,
+				B4659F5F27F65691006F18DF /* AdminOrderCancelledViewController.swift in Sources */,
+				B42F6F5827EC0FA400C829EF /* ContactViewController.swift in Sources */,
+				B4659F5927F655BF006F18DF /* AdminOrderDeliveredViewController.swift in Sources */,
+				B4FDFB9527F3753F00FD9472 /* SliderCollectionViewCell.swift in Sources */,
+				B4F025E427E952EC00DC1932 /* CustomizeInfoViewController.swift in Sources */,
+				B42F6F5627EBE02100C829EF /* ConfirmationViewController.swift in Sources */,
+				B465FDA327EE4C7A000D095E /* CartItemCell.swift in Sources */,
+				B419AFD327F8B40A00AE3817 /* OrderItemProcessingCell.swift in Sources */,
+				B4D2859D27E193BE00D17C5A /* ProductCell.swift in Sources */,
+				B45D97A827F63D7B006C2AB3 /* OrderItemCell.swift in Sources */,
+				B4E3FFF227EB775D000D9904 /* CustomizeDesignViewController.swift in Sources */,
 				B423819C27DBF4DD00E66E0F /* ViewController.swift in Sources */,
-				B4C72F3827DFD4F1008E7463 /* Utilities.swift in Sources */,
 				B42381A227DBF4DD00E66E0F /* cakeApp.xcdatamodeld in Sources */,
+				B41B162427E1890A00C66760 /* PremadeViewController.swift in Sources */,
+				B4C2D78B27E548D500647E77 /* CustomizeCake.swift in Sources */,
+				B4E13A0427F7AB0100B08B92 /* CancelledOrderViewController.swift in Sources */,
 				B423819827DBF4DD00E66E0F /* AppDelegate.swift in Sources */,
+				B45D979D27F62F12006C2AB3 /* AdminHomeViewController.swift in Sources */,
+				B4E3FFF027EB774F000D9904 /* CustomizeFlavorViewController.swift in Sources */,
+				B4DA9FFE280DCAF7007AFC72 /* AdminProcessingDetailViewController.swift in Sources */,
 				B40F48CF27DC062E00AAD37D /* LoginViewController.swift in Sources */,
 				B423819A27DBF4DD00E66E0F /* SceneDelegate.swift in Sources */,
+				B4E13A0027F7AAE500B08B92 /* DeliveredOrderViewController.swift in Sources */,
+				B415647927FBB09600304945 /* OrderDetail.swift in Sources */,
+				B4DA9FFA280DA7C0007AFC72 /* AdminCompletedOrderViewController.swift in Sources */,
+				B4E3FFEE27EB7730000D9904 /* CustomizeSizeViewController.swift in Sources */,
+				B4D2859927E1929000D17C5A /* Product.swift in Sources */,
+				B4D3694B27E0277F000AC8AD /* Constants.swift in Sources */,
+				B4C2D78827E5467C00647E77 /* CustomizeCakeCell.swift in Sources */,
+				B4C2D78527E53CDC00647E77 /* CustomizeCakeViewController.swift in Sources */,
+				B456D25827EAA35A009B58FA /* CartProduct.swift in Sources */,
+				B43FC56D27EAB05500E2B9AF /* ShippingViewController.swift in Sources */,
+				B43FC57127EAB4D300E2B9AF /* PaymentViewController.swift in Sources */,
+				B412631927E2B45000DED9EF /* ProfileViewController.swift in Sources */,
+				B4659F5D27F65685006F18DF /* AdminOrderProcessingViewController.swift in Sources */,
+				B4D2859627E18C4800D17C5A /* AccountViewController.swift in Sources */,
+				B4659F6527F7735B006F18DF /* AdminDeliveredDetailViewController.swift in Sources */,
+				B4E13A0227F7AAF100B08B92 /* ProcessingOrderViewController.swift in Sources */,
+				B415647627FB94FD00304945 /* OrderDetailCell.swift in Sources */,
+				B46441BB27EA78C300963308 /* CartViewController.swift in Sources */,
+				B45D97AB27F63F36006C2AB3 /* OrderProduct.swift in Sources */,
+				B48A9B4527E217B60090A470 /* CakeDetailsViewController.swift in Sources */,
+				B4E13A0827F7AFF700B08B92 /* AdminOrderDetailViewController.swift in Sources */,
+				B4E3FFEC27EB770B000D9904 /* CustomizeShapeViewController.swift in Sources */,
+				B40BCD1027EE675E00B39EFF /* ShoppingCartViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +843,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/cakeApp/cakeApp_bridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -614,6 +898,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/cakeApp/cakeApp_bridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -629,12 +914,42 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DB97PD4D49;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth/FirebaseAuth.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/FirebaseFirestore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging/FirebaseMessaging.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StripeApplePay/StripeApplePay.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StripeCore/StripeCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StripeUICore/StripeUICore.framework/Headers\"",
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil/absl.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios\"",
+				);
 				INFOPLIST_FILE = cakeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -643,8 +958,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinjal.customcake.cakeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/cakeApp_bridge.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -658,12 +974,41 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DB97PD4D49;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth/FirebaseAuth.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/FirebaseFirestore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging/FirebaseMessaging.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StripeApplePay/StripeApplePay.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StripeCore/StripeCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StripeUICore/StripeUICore.framework/Headers\"",
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil/absl.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
+				);
 				INFOPLIST_FILE = cakeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -672,8 +1017,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinjal.customcake.cakeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/cakeApp_bridge.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
