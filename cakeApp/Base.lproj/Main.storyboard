@@ -16,12 +16,28 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLX-qJ-u5N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-622" y="-60"/>
+            <point key="canvasLocation" x="780" y="162"/>
         </scene>
-        <!--View Controller-->
+        <!--CartVC-->
+        <scene sceneID="lCo-1c-PQr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Cart" referencedIdentifier="CartVC" id="SlE-NW-7GA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWT-tD-oCp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="243"/>
+        </scene>
+        <!--AdminHomeVC-->
+        <scene sceneID="e0f-Pq-vDd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Admin_Home" referencedIdentifier="AdminHomeVC" id="vgG-fx-caG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rbj-1x-5tH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="822" y="331"/>
+        </scene>
+        <!--Home View COntroller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="ViewController" customModule="cakeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" title="Home View COntroller" id="BYZ-38-t0r" customClass="ViewController" customModule="cakeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qJM-vw-zrf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,31 +56,55 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aN-XM-xPH">
-                                <rect key="frame" x="291" y="503" width="103" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="View All">
-                                        <attributes>
-                                            <color key="NSColor" red="0.96862745098039216" green="0.47058823529411764" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="24" name="Cochin-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home cake1" translatesAutoresizingMaskIntoConstraints="NO" id="IQR-mL-UOj">
                                 <rect key="frame" x="-163" y="-180" width="782" height="744"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="19"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5f-C6-FMi">
+                                <rect key="frame" x="40" y="44" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Z4G-Eb-vL5"/>
+                                    <constraint firstAttribute="width" constant="100" id="hzk-ry-nIZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="labelButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7p4-6O-akx"/>
+                                    <action selector="nameButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Nk-Wf-mgK"/>
+                                    <segue destination="vgG-fx-caG" kind="presentation" identifier="goToAdminHome" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="3gB-x1-lTy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufK-eU-8Pr">
+                                <rect key="frame" x="20" y="244" width="365" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="1Ch-Uy-Z7Y"/>
+                                    <constraint firstAttribute="width" constant="365" id="Lgp-G9-fuP"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="How would you like to order?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.98766966540404044" green="0.98766966540404044" blue="0.98766966540404044" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="50" name="Cochin-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKy-7W-juo">
-                                <rect key="frame" x="20" y="44" width="58.5" height="44"/>
+                                <rect key="frame" x="20" y="44" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Vqy-oL-N0p"/>
+                                    <constraint firstAttribute="width" constant="40" id="fBv-Eu-mwa"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="person.fill" catalog="system" title="" cornerStyle="medium">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                     </preferredSymbolConfiguration>
                                     <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
@@ -76,10 +116,13 @@
                                 <rect key="frame" x="29" y="416" width="174" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Ready-made Cake" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" title="Pre-made Cake" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="26"/>
                                     <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="premadeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HZf-bL-Jb7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sY7-dF-eLL">
                                 <rect key="frame" x="217" y="416" width="168" height="64"/>
@@ -89,52 +132,120 @@
                                     <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="26"/>
                                     <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="customizeCakeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s3x-TD-Hfc"/>
+                                    <segue destination="F5f-HH-Jhx" kind="presentation" identifier="goToCustomizeCake" modalPresentationStyle="fullScreen" id="FTX-fD-pWS"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cake31" translatesAutoresizingMaskIntoConstraints="NO" id="3G4-ve-GaI">
-                                <rect key="frame" x="-108" y="599" width="193" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cake16" translatesAutoresizingMaskIntoConstraints="NO" id="IED-KO-h1Q">
-                                <rect key="frame" x="323" y="609" width="193" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cake22" translatesAutoresizingMaskIntoConstraints="NO" id="XCi-rk-U5t">
-                                <rect key="frame" x="-46" y="567" width="506" height="277"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPA-w5-gga">
-                                <rect key="frame" x="344" y="44" width="50" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPA-w5-gga">
+                                <rect key="frame" x="354" y="44" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="gXw-Mm-eRd"/>
+                                    <constraint firstAttribute="width" constant="40" id="pUr-W4-h3E"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="cart" catalog="system" title="" cornerStyle="medium">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                     </preferredSymbolConfiguration>
                                     <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="cartButtonclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7YK-bc-882"/>
+                                    <segue destination="SlE-NW-7GA" kind="presentation" identifier="goToCart" modalPresentationStyle="fullScreen" id="vF7-eV-LTA"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vanilla Cake" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izi-ib-7uK">
+                                <rect key="frame" x="124" y="828" width="166.5" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cake16" translatesAutoresizingMaskIntoConstraints="NO" id="fkf-WQ-4e7">
+                                <rect key="frame" x="82" y="560" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="9Z0-VJ-COY"/>
+                                    <constraint firstAttribute="height" constant="250" id="zb3-gK-Zzh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cake" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awn-1r-bHX">
+                                <rect key="frame" x="64" y="52" width="53.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2GK-rW-v9Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xPA-w5-gga" firstAttribute="top" secondItem="2GK-rW-v9Z" secondAttribute="top" id="31y-hF-ycR"/>
+                            <constraint firstItem="fkf-WQ-4e7" firstAttribute="centerX" secondItem="qJM-vw-zrf" secondAttribute="centerX" id="4TB-tz-8S4"/>
+                            <constraint firstItem="ufK-eU-8Pr" firstAttribute="leading" secondItem="2GK-rW-v9Z" secondAttribute="leading" constant="20" id="99D-Ym-fCx"/>
+                            <constraint firstItem="awn-1r-bHX" firstAttribute="top" secondItem="2GK-rW-v9Z" secondAttribute="top" constant="2" id="SBI-7U-k44"/>
+                            <constraint firstItem="awn-1r-bHX" firstAttribute="leading" secondItem="gKy-7W-juo" secondAttribute="trailing" constant="4" id="SvM-ff-BGf"/>
+                            <constraint firstItem="n5f-C6-FMi" firstAttribute="top" secondItem="2GK-rW-v9Z" secondAttribute="top" id="Uas-WR-rmE"/>
+                            <constraint firstItem="awn-1r-bHX" firstAttribute="top" secondItem="2GK-rW-v9Z" secondAttribute="top" constant="8" id="bB0-JF-Xfe"/>
                             <constraint firstItem="gKy-7W-juo" firstAttribute="leading" secondItem="2GK-rW-v9Z" secondAttribute="leading" constant="20" id="dbL-0B-EkM"/>
+                            <constraint firstItem="n5f-C6-FMi" firstAttribute="leading" secondItem="2GK-rW-v9Z" secondAttribute="leading" constant="40" id="eQw-uK-39m"/>
                             <constraint firstItem="2GK-rW-v9Z" firstAttribute="trailing" secondItem="xPA-w5-gga" secondAttribute="trailing" constant="20" id="ezp-cN-X2e"/>
                             <constraint firstItem="gKy-7W-juo" firstAttribute="top" secondItem="2GK-rW-v9Z" secondAttribute="top" id="hKD-ZM-9Ob"/>
+                            <constraint firstItem="ufK-eU-8Pr" firstAttribute="top" secondItem="2GK-rW-v9Z" secondAttribute="top" constant="200" id="n5Y-67-oFC"/>
+                            <constraint firstItem="fkf-WQ-4e7" firstAttribute="top" secondItem="ufK-eU-8Pr" secondAttribute="bottom" constant="152" id="psA-sC-W8F"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fullnameField" destination="awn-1r-bHX" id="6VM-LW-Sn9"/>
                         <segue destination="741-8y-ncV" kind="presentation" identifier="goToLogin" modalPresentationStyle="fullScreen" id="a6Q-N2-RXt"/>
+                        <segue destination="RzC-06-Qtf" kind="presentation" identifier="goToAccount" modalPresentationStyle="fullScreen" id="i92-SX-22S"/>
+                        <segue destination="kAr-D8-CNc" kind="presentation" identifier="goToPremade" modalPresentationStyle="fullScreen" id="8JL-gA-EVi"/>
+                        <segue destination="bIA-I4-GG4" kind="presentation" identifier="goToCakeDetails" modalPresentationStyle="fullScreen" id="toP-ab-0hU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="70"/>
+            <point key="canvasLocation" x="98.550724637681171" y="67.633928571428569"/>
+        </scene>
+        <!--AccountVC-->
+        <scene sceneID="bmi-pv-Kwg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" referencedIdentifier="AccountVC" id="RzC-06-Qtf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Lva-kT-cjN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMW-gB-AOy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792" y="-210"/>
+        </scene>
+        <!--PremadeVC-->
+        <scene sceneID="abb-77-TwE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Pre-made" referencedIdentifier="PremadeVC" id="kAr-D8-CNc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="efM-5s-Azv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sA-O5-ces" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808" y="-125"/>
+        </scene>
+        <!--CustomizeCakeVC-->
+        <scene sceneID="ms4-ey-WUU">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="goToCustomizeCake" storyboardName="CustomizeCake" referencedIdentifier="CustomizeCakeVC" id="F5f-HH-Jhx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XRC-jR-wZB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824" y="-34"/>
+        </scene>
+        <!--CakeDetailsVC-->
+        <scene sceneID="iVn-fn-o9S">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CakeDetails" referencedIdentifier="CakeDetailsVC" id="bIA-I4-GG4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EF2-Yg-KVb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807" y="61"/>
         </scene>
     </scenes>
     <resources>
         <image name="cake16" width="236" height="353"/>
-        <image name="cake22" width="236" height="354"/>
-        <image name="cake31" width="236" height="354"/>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="home cake1" width="612" height="408"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
