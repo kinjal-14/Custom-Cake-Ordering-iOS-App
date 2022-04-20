@@ -1,30 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
+        <scene sceneID="B1b-7G-bbW">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="goToHome" storyboardName="Main" referencedIdentifier="MainVC" id="8oA-bC-V5Y" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0p-dL-fBi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="581" y="200"/>
+        </scene>
+        <!--Account View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountVC" id="Y6W-OH-hqX" customClass="AccountViewController" customModule="cakeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOr-o2-vql">
+                                <rect key="frame" x="20" y="64" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="2I1-n4-fk3"/>
+                                    <constraint firstAttribute="width" constant="40" id="w48-DM-muk"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="chevron.backward" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="large" weight="bold"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RTk-xq-elo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="at1-YP-qgA">
+                                <rect key="frame" x="120" y="30" width="153" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="OhZ-h8-73r"/>
+                                    <constraint firstAttribute="height" constant="101" id="xSS-Jc-S6c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="43"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="8" height="20"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgC-Wf-Obi">
+                                <rect key="frame" x="40" y="318" width="319" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="QVr-4h-Qrp"/>
+                                    <constraint firstAttribute="height" constant="55" id="wiU-jg-YO2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" imagePlacement="trailing" title="Profile" imagePadding="160" cornerStyle="capsule">
+                                    <imageReference key="image" image="chevron.forward" catalog="system" symbolScale="large"/>
+                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="26"/>
+                                    <attributedString key="attributedSubtitle"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="7kU-4b-J3K" kind="presentation" identifier="goToProfile" modalPresentationStyle="fullScreen" id="1bg-pw-mET"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPV-Yj-zl6">
+                                <rect key="frame" x="40" y="397" width="319" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="cci-2e-6Vn"/>
+                                    <constraint firstAttribute="width" constant="336" id="hxi-PC-RlQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" imagePlacement="trailing" title="Your Orders" imagePadding="90" cornerStyle="capsule">
+                                    <imageReference key="image" image="chevron.forward" catalog="system" symbolScale="large"/>
+                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="27"/>
+                                    <attributedString key="attributedSubtitle"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="orderButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HSr-1u-ztJ"/>
+                                    <segue destination="irg-lZ-Ler" kind="presentation" identifier="goToDeliveredOrder" modalPresentationStyle="fullScreen" id="IJA-2x-ekM"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cake30" translatesAutoresizingMaskIntoConstraints="NO" id="pOe-4K-cj4">
+                                <rect key="frame" x="114" y="124" width="171" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="153" id="3cK-To-qF8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="eMu-x3-w09"/>
+                                    <constraint firstAttribute="height" constant="164" id="j50-n7-eFB"/>
+                                    <constraint firstAttribute="width" constant="171" id="uei-6f-m1U"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86C-1l-GVC">
+                                <rect key="frame" x="40" y="476" width="319" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="iBe-5P-qS2"/>
+                                    <constraint firstAttribute="width" constant="336" id="mH0-Id-Ypm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" imagePlacement="trailing" title="Contact Us" imagePadding="110" cornerStyle="capsule">
+                                    <imageReference key="image" image="chevron.forward" catalog="system" symbolScale="large"/>
+                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="27"/>
+                                    <attributedString key="attributedSubtitle"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="contactUsButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Xg3-Ik-4Vj"/>
+                                    <segue destination="Cwr-33-7dg" kind="presentation" identifier="goToContact" modalPresentationStyle="fullScreen" id="S12-5A-0mc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGt-88-yHM">
+                                <rect key="frame" x="74.5" y="571" width="250" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="hEX-Y0-Vg4"/>
+                                    <constraint firstAttribute="width" constant="250" id="wUF-hz-M0r"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Logout" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="35"/>
+                                    <attributedString key="attributedSubtitle"/>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logoutButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bhd-lW-dch"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="86C-1l-GVC" secondAttribute="trailing" constant="40" id="0mw-u6-Pah"/>
+                            <constraint firstItem="at1-YP-qgA" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="-14" id="0vN-ih-ix9"/>
+                            <constraint firstItem="KGt-88-yHM" firstAttribute="top" secondItem="86C-1l-GVC" secondAttribute="bottom" constant="40" id="GDl-21-8Fi"/>
+                            <constraint firstItem="qgC-Wf-Obi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="GkA-9N-jsv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dPV-Yj-zl6" secondAttribute="trailing" constant="40" id="HV9-7Q-opG"/>
+                            <constraint firstItem="86C-1l-GVC" firstAttribute="top" secondItem="dPV-Yj-zl6" secondAttribute="bottom" constant="36" id="OXc-3e-iag"/>
+                            <constraint firstItem="dPV-Yj-zl6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="Sib-Le-V4G"/>
+                            <constraint firstItem="qgC-Wf-Obi" firstAttribute="top" secondItem="pOe-4K-cj4" secondAttribute="bottom" constant="30" id="T6q-5v-fMi"/>
+                            <constraint firstItem="86C-1l-GVC" firstAttribute="top" secondItem="dPV-Yj-zl6" secondAttribute="bottom" constant="24" id="TwN-g3-FsL"/>
+                            <constraint firstItem="86C-1l-GVC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="VoZ-Y0-c9l"/>
+                            <constraint firstItem="pOe-4K-cj4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="YeL-vZ-5aa"/>
+                            <constraint firstItem="aOr-o2-vql" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="ctW-D6-cDJ"/>
+                            <constraint firstItem="aOr-o2-vql" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="g91-hJ-YmX"/>
+                            <constraint firstItem="KGt-88-yHM" firstAttribute="centerX" secondItem="86C-1l-GVC" secondAttribute="centerX" id="hXL-b6-L40"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="at1-YP-qgA" secondAttribute="trailing" constant="126" id="oZk-h8-QLk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qgC-Wf-Obi" secondAttribute="trailing" constant="40" id="ron-eB-jvN"/>
+                            <constraint firstItem="pOe-4K-cj4" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ti8-ZV-vG5"/>
+                            <constraint firstItem="at1-YP-qgA" firstAttribute="leading" secondItem="aOr-o2-vql" secondAttribute="trailing" constant="60" id="uAi-Ds-tnS"/>
+                            <constraint firstItem="dPV-Yj-zl6" firstAttribute="top" secondItem="qgC-Wf-Obi" secondAttribute="bottom" constant="24" id="vgI-21-v6d"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="accountImage" destination="pOe-4K-cj4" id="Awm-yM-o0G"/>
+                        <segue destination="8oA-bC-V5Y" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="cFf-zI-QFW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="0.6696428571428571"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="gXQ-QT-OIA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="ProfileVC" id="7kU-4b-J3K" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9h-OE-prw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="-199"/>
+        </scene>
+        <!--DeliveredOrderVC-->
+        <scene sceneID="tU1-CC-hg9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserOrders" referencedIdentifier="DeliveredOrderVC" id="irg-lZ-Ler" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7tT-WZ-J3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="587" y="-62"/>
+        </scene>
+        <!--ContactVC-->
+        <scene sceneID="hUF-96-fUo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Contact" referencedIdentifier="ContactVC" id="Cwr-33-7dg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBy-en-dEW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582" y="71"/>
         </scene>
     </scenes>
     <resources>
+        <image name="cake30" width="236" height="314"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="chevron.forward" catalog="system" width="96" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

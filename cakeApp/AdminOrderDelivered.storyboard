@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Admin Order Delivered View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AdminOrderVC" id="Y6W-OH-hqX" customClass="AdminOrderDeliveredViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orders" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UV-q0-V2h">
+                                <rect key="frame" x="142" y="44" width="130" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="LAT-SK-UUj"/>
+                                    <constraint firstAttribute="width" constant="130" id="kic-NS-FBV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="8" height="20"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7m-Cc-zRI">
+                                <rect key="frame" x="336" y="44" width="58" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4Z7-QP-AxP"/>
+                                    <constraint firstAttribute="width" constant="58" id="zmh-qN-I7r"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="person.fill" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    </preferredSymbolConfiguration>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uzm-mc-fQK">
+                                <rect key="frame" x="0.0" y="108" width="414" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdv-Pz-N0N">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Delivered" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVh-1r-Jau">
+                                        <rect key="frame" x="138" y="0.0" width="138" height="60"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Processing" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hre-oN-cdU">
+                                        <rect key="frame" x="276" y="0.0" width="138" height="60"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Cancelled" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Cochin-Bold" family="Cochin" pointSize="22"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ce4-Xw-Mvd"/>
+                                    <constraint firstAttribute="width" constant="414" id="boh-OV-GwI"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NV6-Za-PGJ">
+                                <rect key="frame" x="20" y="44" width="58" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="HrU-1a-t5F"/>
+                                    <constraint firstAttribute="height" constant="44" id="X6P-Z5-Bbx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="chevron.backward" catalog="system" title="" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="bold">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    </preferredSymbolConfiguration>
+                                    <color key="baseBackgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IP0-32-fA5"/>
+                                    <segue destination="kgf-IE-jOH" kind="presentation" identifier="goToAdminHome" modalPresentationStyle="fullScreen" id="KJA-kI-7Xz"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fit-Wh-bH7">
+                                <rect key="frame" x="20" y="188" width="374" height="688"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fit-Wh-bH7" firstAttribute="top" secondItem="Uzm-mc-fQK" secondAttribute="bottom" constant="20" id="4hU-fK-4zT"/>
+                            <constraint firstItem="Uzm-mc-fQK" firstAttribute="top" secondItem="NV6-Za-PGJ" secondAttribute="bottom" constant="20" id="5XS-4M-iMu"/>
+                            <constraint firstAttribute="trailing" secondItem="fit-Wh-bH7" secondAttribute="trailing" constant="20" id="9J6-Z4-shp"/>
+                            <constraint firstItem="2UV-q0-V2h" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="F8w-VB-A0a"/>
+                            <constraint firstAttribute="bottom" secondItem="fit-Wh-bH7" secondAttribute="bottom" constant="20" id="G2J-st-Nye"/>
+                            <constraint firstItem="w7m-Cc-zRI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="GkS-OH-hOS"/>
+                            <constraint firstItem="Uzm-mc-fQK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="g8R-hl-QCA"/>
+                            <constraint firstItem="NV6-Za-PGJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="hkt-ui-iDo"/>
+                            <constraint firstItem="fit-Wh-bH7" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="tPL-qm-iu7"/>
+                            <constraint firstItem="Uzm-mc-fQK" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="wCr-G5-lVW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="w7m-Cc-zRI" secondAttribute="trailing" constant="20" id="y3Q-Zf-Qa3"/>
+                            <constraint firstItem="NV6-Za-PGJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="zHH-xG-Vxc"/>
+                            <constraint firstItem="2UV-q0-V2h" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="zwW-Pi-RXO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="fit-Wh-bH7" id="x0b-1I-Zak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+        <!--AdminHomeVC-->
+        <scene sceneID="fh8-t4-Qut">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Admin_Home" referencedIdentifier="AdminHomeVC" id="kgf-IE-jOH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CoY-Ew-iG8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="-85"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
